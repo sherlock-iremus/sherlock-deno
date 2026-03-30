@@ -16,7 +16,7 @@ const { options } = await new Command()
     .option('--files-dir <files-dir:string>')
     .parse();
 
-indexFilesByName(options.filesDir)
+console.log(indexFilesByName(options.filesDir));
 
 // const records = await fetchGristRecords(options.gristBase, options.gristApiKey, options.gristDocId, options.gristTableId);
 // for (const record of records) {
