@@ -10,4 +10,5 @@ deno --allow-env --allow-net --allow-read --unsafely-ignore-certificate-errors \
   --grist-api-key $GRIST_API_KEY \
   --grist-base https://musicodb.sorbonne-universite.fr/api \
   --grist-doc-id 6mXv99bFH9FP \
-  --grist-table-id Test
+  --grist-table-id Test \
+  --files-dir "/mnt/d/Dropbox/_temp/Risset_plat"
