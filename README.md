@@ -21,5 +21,5 @@ Collection de fonctions écrites en [Deno](https://deno.com/) commune à différ
 
 ## ⚙️ Scripts communs
 
-- [](common-grist.ts)
-- [](common-nakala.ts)
+- [common-grist.ts]()
+- [common-nakala.ts]()
