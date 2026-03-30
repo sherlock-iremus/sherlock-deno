@@ -1,3 +1,16 @@
 # sherlock-deno
 
 Collection de fonctions écrites en [Deno](https://deno.com/) commune à différents scripts de l'écosystème [SHERLOCK](https://github.com/sherlock-iremus/sherlock).
+
+## grist-nakala
+
+🎯 Pour uploader en batch des fichiers locaux catalogués dans Grist vers des collections Nakala.
+
+### Liens utiles
+
+- https://test.nakala.fr/
+
+### Webographie
+
+- https://github.com/xy-liao/o-nakala-workshop
+- https://github.com/sardinecan/Nakala.jl
