@@ -4,7 +4,7 @@ Collection de fonctions écrites en [Deno](https://deno.com/) commune à différ
 
 ## grist-nakala
 
-🎯 Pour uploader en batch des fichiers locaux catalogués dans Grist vers des collections Nakala.
+🎯 Pour uploader en batch des fichiers locaux catalogués dans Grist vers des collections [Nakala](https://nakala.fr/).
 
 ### Liens utiles
 
