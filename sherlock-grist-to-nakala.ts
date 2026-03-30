@@ -18,7 +18,7 @@ const { options } = await new Command()
 
 indexFilesByName(options.filesDir)
 
-const records = await fetchGristRecords(options.gristBase, options.gristApiKey, options.gristDocId, options.gristTableId);
+// const records = await fetchGristRecords(options.gristBase, options.gristApiKey, options.gristDocId, options.gristTableId);
 // for (const record of records) {
 //     console.log(record);
 // }

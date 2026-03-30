@@ -13,7 +13,6 @@ export async function fetchRecords(base: string, apiKey: string, docId: string, 
         }
 
         const data = await response.json();
-        console.log("Fetched records:", data.records);
         return data.records;
 
     } catch (err) {
