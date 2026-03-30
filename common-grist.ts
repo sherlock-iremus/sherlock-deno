@@ -1,21 +1,24 @@
-export async function fetchRecords(gristBaseUri: string, gristApiKey: string, gristDocId: string, gristTable: string,) {
-    const response = await fetch(
-        `${gristBaseUri}/api/docs/${gristDocId}/tables/${gristTable}/records`,
-        {
+async function fetchRecords(base: string, apiKey: string, docId: string, tableId: string) {
+    const url = `${base}/docs/${docId}/tables/${tableId}/records`;
+    try {
+        const response = await fetch(url, {
             headers: {
-                Authorization: `Bearer ${gristApiKey}`,
+                "Authorization": `Bearer ${apiKey}`,
                 "Content-Type": "application/json",
-            }
+            },
         });
 
-    if (!response.ok) {
-        throw new Error(`Error: ${response.status} ${response.statusText}`);
+        if (!response.ok) {
+            throw new Error(`Error fetching records: ${response.status} ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        console.log("Fetched records:", data.records);
+        return data.records;
+
+    } catch (err) {
+        console.error("Fetch failed:", err);
     }
-
-    const responseJson = await response.json();
-    const records = responseJson["records"];
-
-    return records;
 }
 
 export async function writeValue(gristBaseUri: string, gristApiKey: string, gristDocId: string, gristTable: string, id: string, column: string, value: string) {
