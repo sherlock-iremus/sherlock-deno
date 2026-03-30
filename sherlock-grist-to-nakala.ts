@@ -20,6 +20,7 @@ const files = await indexFilesByName(options.filesDir);
 
 const records = await fetchGristRecords(options.gristBase, options.gristApiKey, options.gristDocId, options.gristTableId);
 for (const record of records) {
-    const foundFiles = findFilesByPrefix(files, record.fields.filenames_prefix);
-    console.log(record.fields.filenames_prefix, foundFiles.length);
+    let foundFiles = findFilesByPrefix(files, record.fields.filenames);
+    foundFiles.sort((a: string, b: string) => a.localeCompare(b, undefined, { sensitivity: "base" }));
+    console.log(record.fields.filenames, foundFiles);
 }
