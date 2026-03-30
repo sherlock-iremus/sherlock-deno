@@ -1,6 +1,6 @@
 import { Command } from 'jsr:@cliffy/command@1.0.0';
 import { load } from 'https://deno.land/std@0.224.0/dotenv/mod.ts';
-import { fetchRecords as fetchGristRecords } from "https://raw.githubusercontent.com/sherlock-iremus/sherlock-deno/refs/heads/main/common-grist.ts?token=GHSAT0AAAAAADXFUTNUFDYR4XIW2UDFZJ6W2OKOKZA";
+import { fetchRecords as fetchGristRecords } from "https://raw.githubusercontent.com/sherlock-iremus/sherlock-deno/refs/heads/main/common-grist.ts";
 
 
 const { options } = await new Command()
