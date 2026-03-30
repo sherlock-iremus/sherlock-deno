@@ -14,3 +14,7 @@ Collection de fonctions écrites en [Deno](https://deno.com/) commune à différ
 
 - https://github.com/xy-liao/o-nakala-workshop
 - https://github.com/sardinecan/Nakala.jl
+
+## sherlock-grist-opentheso-preflabels-to-uri
+
+🎯 Pour récupérer dans Grist l'URI d'un `skos:concept` défini dans un thésaurus dans Opentheso selon son `skos:prefLabel`.
