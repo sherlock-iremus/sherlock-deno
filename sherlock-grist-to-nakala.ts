@@ -1,7 +1,7 @@
 import { Command } from 'jsr:@cliffy/command@1.0.0';
 import { load } from 'https://deno.land/std@0.224.0/dotenv/mod.ts';
 import { fetchRecords as fetchGristRecords } from "https://raw.githubusercontent.com/sherlock-iremus/sherlock-deno/refs/heads/main/common-grist.ts";
-import { indexFilesByName } from "https://raw.githubusercontent.com/sherlock-iremus/sherlock-deno/refs/heads/main/common-files.ts";
+import { indexFilesByName, findFilesByPrefix } from "https://raw.githubusercontent.com/sherlock-iremus/sherlock-deno/refs/heads/main/common-files.ts";
 
 const { options } = await new Command()
     .name('SHERLOCK Grist to Nakala')
@@ -20,5 +20,5 @@ const files = await indexFilesByName(options.filesDir);
 
 const records = await fetchGristRecords(options.gristBase, options.gristApiKey, options.gristDocId, options.gristTableId);
 for (const record of records) {
-    console.log(record);
+    findFilesByPrefix(files, record.fields.filenames_prefix);
 }
