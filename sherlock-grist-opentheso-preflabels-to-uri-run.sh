@@ -1,1 +1,0 @@
-deno --allow-net --allow-env --allow-read --unsafely-ignore-certificate-errors sherlock-grist-opentheso-preflabels-to-uri.ts
