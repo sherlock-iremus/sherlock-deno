@@ -1,28 +1,7 @@
 import { Command } from 'jsr:@cliffy/command@1.0.0';
 import { load } from 'https://deno.land/std@0.224.0/dotenv/mod.ts';
+import { fetchRecords as fetchGristRecords } from "https://raw.githubusercontent.com/sherlock-iremus/sherlock-deno/refs/heads/main/common-grist.ts?token=GHSAT0AAAAAADXFUTNUFDYR4XIW2UDFZJ6W2OKOKZA";
 
-async function fetchGristRecords(base: string, apiKey: string, docId: string, tableId: string) {
-    const url = `${base}/docs/${docId}/tables/${tableId}/records`;
-    try {
-        const response = await fetch(url, {
-            headers: {
-                "Authorization": `Bearer ${apiKey}`,
-                "Content-Type": "application/json",
-            },
-        });
-
-        if (!response.ok) {
-            throw new Error(`Error fetching records: ${response.status} ${response.statusText}`);
-        }
-
-        const data = await response.json();
-        console.log("Fetched records:", data.records);
-        return data.records;
-
-    } catch (err) {
-        console.error("Fetch failed:", err);
-    }
-}
 
 const { options } = await new Command()
     .name('SHERLOCK Grist to Nakala')

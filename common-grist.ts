@@ -1,4 +1,4 @@
-async function fetchRecords(base: string, apiKey: string, docId: string, tableId: string) {
+export async function fetchRecords(base: string, apiKey: string, docId: string, tableId: string) {
     const url = `${base}/docs/${docId}/tables/${tableId}/records`;
     try {
         const response = await fetch(url, {
