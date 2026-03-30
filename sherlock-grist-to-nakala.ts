@@ -20,5 +20,6 @@ const files = await indexFilesByName(options.filesDir);
 
 const records = await fetchGristRecords(options.gristBase, options.gristApiKey, options.gristDocId, options.gristTableId);
 for (const record of records) {
-    findFilesByPrefix(files, record.fields.filenames_prefix);
+    const foundFiles = findFilesByPrefix(files, record.fields.filenames_prefix);
+    console.log(record.fields.filenames_prefix, foundFiles.length);
 }
