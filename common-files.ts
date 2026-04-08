@@ -14,7 +14,7 @@ export function findFilesByPrefix(files: object, prefix: string) {
     const r = [];
 
     for (const [key, value] of Object.entries(files)) {
-        if (key.startsWith(prefix)) {
+        if (key.startsWith(prefix + '_') || key.startsWith(prefix + '-')) {
             r.push(value);
         }
     }
