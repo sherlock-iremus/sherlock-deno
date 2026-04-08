@@ -1,7 +1,7 @@
 import { Command } from 'jsr:@cliffy/command@1.0.0';
 import { load } from 'https://deno.land/std@0.224.0/dotenv/mod.ts';
-import { fetchRecords as fetchGristRecords } from "https://raw.githubusercontent.com/sherlock-iremus/sherlock-deno/main/common-grist.ts";
-import { indexFilesByName, findFilesByPrefix } from "https://raw.githubusercontent.com/sherlock-iremus/sherlock-deno/main/common-files.ts";
+import { fetchRecords as fetchGristRecords, patchRecord, } from "./common-grist.ts";
+import { indexFilesByName, findFilesByPrefix } from "./common-files.ts";
 import { postDataUploads, postDatas } from './common-nakala.ts';
 
 const { options } = await new Command()
@@ -32,22 +32,45 @@ for (const record of records) {
     }
     if (!sherlockUuid || associatedFiles.length === 0) continue
 
+    // WHAT ARE WE DOING?
+    console.log('-'.repeat(80));
+    console.log(`🔮 Donnée d'id « ${businessId} »`);
+
+    // DOES THE DATA ALREADY EXIST ON NAKALA?
     if (nakalaDoi) {
-        console.log(`✅ ${businessId} => ${nakalaDoi}`);
+        console.log(`🔮 ${businessId} => ${nakalaDoi}`);
     }
     else {
-        console.log(associatedFiles)
-        // UPLOAD FILES TO NAKALA
-        // const filesOnNakala = []
-        // for (const filePath of associatedFiles) {
-        //     const r = await postDataUploads(options.nakalaApiBase, options.nakalaApiKey, filePath);
-        //     filesOnNakala.push(r);
-        //     console.log("✅ /datas/uploads =>", r)
-        // }
-        // const r = await postDatas(options.nakalaApiBase, options.nakalaApiKey, filesOnNakala, sherlockUuid, businessId);
-        // console.log("✅ /datas =>", r)
-        // nakalaDoi = r.payload.id;
-        // console.log(`✅ https://nakala.fr/${nakalaDoi}`);
-        break
+        // UPLOAD FILES
+        const filesOnNakala = []
+        console.log(`🔮 ${associatedFiles.length} fichiers à uploader avec le préfixe « ${record.fields.filenames} »`)
+        for (const filePath of associatedFiles) {
+            const r = await postDataUploads(options.nakalaApiBase, options.nakalaApiKey, filePath);
+            filesOnNakala.push(r);
+            console.log("✨ /datas/uploads =>", JSON.stringify(r))
+        }
+
+        // POST DATA
+        const r = await postDatas(options.nakalaApiBase, options.nakalaApiKey, filesOnNakala, sherlockUuid, businessId);
+        console.log("✨ /datas =>", JSON.stringify(r))
+        const newNakalaDoi = r.payload.id;
+        const fullNewNakalaDoi = options.nakalaApiBase === "apitest.nakala.fr"
+            ? `https://test.nakala.fr/${newNakalaDoi}`
+            : `https://nakala.fr/${newNakalaDoi}`
+        console.log(`🌸 ${fullNewNakalaDoi}`);
+
+        // STORE NAKALA DOI IN GRIST
+        await patchRecord(
+            options.gristBase,
+            options.gristApiKey,
+            options.gristDocId,
+            options.gristTableId,
+            {
+                "records": [{
+                    "require": { E42_business_id: businessId },
+                    "fields": { "E42_nakala_doi": fullNewNakalaDoi }
+                }]
+            }
+        )
     }
 }

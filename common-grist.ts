@@ -20,7 +20,7 @@ export async function fetchRecords(base: string, apiKey: string, docId: string, 
     }
 }
 
-export async function writeValue(gristBaseUri: string, gristApiKey: string, gristDocId: string, gristTable: string, id: string, column: string, value: string) {
+export async function writeValueById(gristBaseUri: string, gristApiKey: string, gristDocId: string, gristTable: string, id: string, column: string, value: string) {
     const response = await fetch(
         `${gristBaseUri}/api/docs/${gristDocId}/tables/${gristTable}/records`,
         {
@@ -39,6 +39,26 @@ export async function writeValue(gristBaseUri: string, gristApiKey: string, gris
                     },
                 ],
             }),
+        }
+    );
+
+    if (!response.ok) {
+        throw new Error(`Error: ${response.status} ${response.statusText}`);
+    }
+
+    const data = await response.json();
+}
+
+export async function patchRecord(gristBaseUri: string, gristApiKey: string, gristDocId: string, gristTable: string, body: object) {
+    const response = await fetch(
+        `${gristBaseUri}/docs/${gristDocId}/tables/${gristTable}/records`,
+        {
+            method: "PUT",
+            headers: {
+                "Authorization": `Bearer ${gristApiKey}`,
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(body),
         }
     );
 
