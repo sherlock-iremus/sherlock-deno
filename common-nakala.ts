@@ -71,3 +71,26 @@ export async function postDatas(apiBase: string, apiKey: string, files, sherlock
         console.error("❌", error);
     }
 }
+
+export async function putMetadatas(apiBase: string, apiKey: string, identifier: string, metadatas: Record<string, string>[]) {
+    const url = `https://${apiBase}/datas/${identifier}`;
+    const data = {
+        "metas": metadatas
+    }
+
+    try {
+        const response = await fetch(url, {
+            method: "PUT",
+            headers: {
+                "accept": "application/json",
+                "X-API-KEY": apiKey,
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data),
+        });
+        return await response.json();
+    }
+    catch (error) {
+        console.error("❌", url, error);
+    }
+}
