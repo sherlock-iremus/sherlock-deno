@@ -10,5 +10,6 @@ deno --allow-env --allow-net --allow-read --unsafely-ignore-certificate-errors \
     --grist-base https://musicodb.sorbonne-universite.fr/api \
     --grist-doc-id 4NmEJA4z9EUB \
     --grist-table-id MG_Estampes \
-    --grist-column-id Objets_representes \
+    --grist-preflabel-column-id Objets_representes \
+    --grist-opentheso-url-column-id TODO \
     --opentheso-thesaurus-url https://opentheso.huma-num.fr/?idt=mercure-galant-estampes

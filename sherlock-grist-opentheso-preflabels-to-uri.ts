@@ -10,7 +10,8 @@ const { options } = await new Command()
     .option('--grist-base <grist-base:string>')
     .option('--grist-doc-id <grist-doc-id:string>')
     .option('--grist-table-id <grist-table-id:string>')
-    .option('--grist-column-id <grist-column-id:string>')
+    .option('--grist-preflabel-column-id <grist-column-id:string>')
+    .option('--grist-opentheso-url-column-id <grist-column-id:string>')
     .option('--opentheso-thesaurus-url <opentheso-thesaurus-url:string>')
     .parse();
 
