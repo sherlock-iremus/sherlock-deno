@@ -1,11 +1,22 @@
-import { Command } from "https://deno.land/x/cliffy@v0.25.7/command/mod.ts";
+import { Command } from 'jsr:@cliffy/command@1.0.0';
 
-import { fetchRecords } from "./common-grist.ts"
+import { fetchRecords as fetchGristRecords, patchRecord } from "./common-grist.ts";
 
-const cmd = await new Command()
-    .option("--grist_api_key <key:string>", "Grist API key", { required: true })
-    .option("--grist_doc_id <id:string>", "Grist document ID", { required: true })
-    .parse(Deno.args);
+const { options } = await new Command()
+    .name('SHERLOCK Grist Opentheso Plugin skos:prefLabel to Opentheso URI')
+    .description('🌴')
+    .version('v1.0.0')
+    .option('--grist-api-key <grist-api-key:string>')
+    .option('--grist-base <grist-base:string>')
+    .option('--grist-doc-id <grist-doc-id:string>')
+    .option('--grist-table-id <grist-table-id:string>')
+    .option('--grist-column-id <grist-column-id:string>')
+    .option('--opentheso-thesaurus-url <opentheso-thesaurus-url:string>')
+    .parse();
 
-console.log(cmd.options.grist_api_key);
-console.log(cmd.options.grist_doc_id);
+console.log(options);
+
+const records = await fetchGristRecords(options.gristBase, options.gristApiKey, options.gristDocId, options.gristTableId);
+for (const record of records) {
+    console.log(record);
+}

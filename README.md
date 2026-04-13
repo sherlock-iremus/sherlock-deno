@@ -11,7 +11,7 @@ Collection de fonctions écrites en [Deno](https://deno.com/) commune à différ
 - https://test.nakala.fr/
 
 ### Webographie
-
+ 
 - https://github.com/xy-liao/o-nakala-workshop
 - https://github.com/sardinecan/Nakala.jl
 
