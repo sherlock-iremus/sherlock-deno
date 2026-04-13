@@ -83,6 +83,6 @@ for (const record of records) {
     const requiredMetadata = extractRequiredMetadataFromRecord(record.fields);
     console.log(requiredMetadata.map(x => x.forRequest()));
     const r_md = await putMetadatas(options.nakalaApiBase, options.nakalaApiKey, nakalaDoiOnly, requiredMetadata.map(x => x.forRequest()));
-    console.log(`✨ /datas/${nakalaDoiOnly}`, r_md)
+    console.log(`ℹ️  /datas/${nakalaDoiOnly}`, r_md)
     break
 }

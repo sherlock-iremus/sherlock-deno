@@ -88,6 +88,7 @@ export async function putMetadatas(apiBase: string, apiKey: string, identifier: 
             },
             body: JSON.stringify(data),
         });
+
         return await response.json();
     }
     catch (error) {
