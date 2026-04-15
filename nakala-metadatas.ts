@@ -31,6 +31,14 @@ export class Creator {
 
         return x;
     }
+
+    static isCreator(value: unknown): value is Creator {
+        return value instanceof Creator;
+    }
+
+    static isCreatorArray(value: unknown): value is Creator[] {
+        return Array.isArray(value) && value.every(Creator.isCreator);
+    }
 }
 
 class MetadataType {
@@ -45,7 +53,7 @@ export class MetadataValue {
     constructor(
         public lang: string | null,
         public metadataType: MetadataType,
-        public value: string | URL | Creator,
+        public value: string | URL | Creator | Creator[],
     ) { }
 
     forRequest() {
@@ -55,8 +63,13 @@ export class MetadataValue {
             "value": this.value.toString(),
         }
 
-        if (this.value instanceof Creator) {
+        if (Creator.isCreator(this.value)) {
             x.value = this.value.asDict();
+            delete x.typeUri;
+        }
+        else if (Creator.isCreatorArray(this.value)) {
+            x.value = this.value.map(v => v.asDict());
+            delete x.typeUri;
         }
 
         if (this.lang && this.metadataType.lang) {
