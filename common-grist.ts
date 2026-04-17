@@ -68,3 +68,22 @@ export async function patchRecord(gristBaseUri: string, gristApiKey: string, gri
 
     const data = await response.json();
 }
+
+export async function describeDoc(gristBaseUri: string, gristApiKey: string, gristDocId: string) {
+    const response = await fetch(
+        `${gristBaseUri}/docs/${gristDocId}`,
+        {
+            method: "GET",
+            headers: {
+                "Authorization": `Bearer ${gristApiKey}`,
+                "Content-Type": "application/json",
+            }
+        }
+    );
+
+    if (!response.ok) {
+        throw new Error(`Error: ${response.status} ${response.statusText}`);
+    }
+
+    const data = await response.json();
+}
