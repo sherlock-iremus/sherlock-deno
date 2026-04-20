@@ -81,10 +81,47 @@ export async function describeDoc(gristBaseUri: string, gristApiKey: string, gri
         }
     );
 
-    console.log(response);
     if (!response.ok) {
         throw new Error(`Error: ${response.status} ${response.statusText}`);
     }
 
-    const data = await response.json();
+    return await response.json();
+}
+
+export async function getTables(gristBaseUri: string, gristApiKey: string, gristDocId: string) {
+    const response = await fetch(
+        `${gristBaseUri}/docs/${gristDocId}/tables`,
+        {
+            method: "GET",
+            headers: {
+                "Authorization": `Bearer ${gristApiKey}`,
+                "Content-Type": "application/json",
+            }
+        }
+    );
+
+    if (!response.ok) {
+        throw new Error(`Error: ${response.status} ${response.statusText}`);
+    }
+
+    return await response.json();
+}
+
+export async function getColumns(gristBaseUri: string, gristApiKey: string, gristDocId: string, gristTable: string) {
+    const response = await fetch(
+        `${gristBaseUri}/docs/${gristDocId}/tables/${gristTable}/columns`,
+        {
+            method: "GET",
+            headers: {
+                "Authorization": `Bearer ${gristApiKey}`,
+                "Content-Type": "application/json",
+            }
+        }
+    );
+
+    if (!response.ok) {
+        throw new Error(`Error: ${response.status} ${response.statusText}`);
+    }
+
+    return await response.json();
 }

@@ -1,0 +1,5270 @@
+{
+  "Morceaux_Analyses": {
+    "columns": {
+      "Nom_de_la_chanson": {
+        "id": "Nom_de_la_chanson",
+        "fields": {
+          "colRef": 10,
+          "label": "Nom de la chanson",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 10,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "MC": {
+        "id": "MC",
+        "fields": {
+          "colRef": 11,
+          "label": "MC",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 11,
+          "type": "RefList:Musiciens",
+          "widgetOptions": "{\"widget\":\"Reference\",\"alignment\":\"left\"}",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 28,
+          "visibleCol": 14,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "DJ": {
+        "id": "DJ",
+        "fields": {
+          "colRef": 12,
+          "label": "DJ",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 12,
+          "type": "RefList:Musiciens",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 29,
+          "visibleCol": 14,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Label": {
+        "id": "Label",
+        "fields": {
+          "colRef": 30,
+          "label": "Label",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 30,
+          "type": "RefList:Table1",
+          "widgetOptions": "{\"widget\":\"Reference\",\"alignment\":\"left\"}",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 31,
+          "visibleCol": 2,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "date": {
+        "id": "date",
+        "fields": {
+          "colRef": 36,
+          "label": "Date de sortie",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 36,
+          "type": "Date",
+          "widgetOptions": "{\"dateFormat\":\"YYYY-MM-DD\",\"timeFormat\":\"h:mma\",\"isCustomDateFormat\":false,\"isCustomTimeFormat\":false}",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": true,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "bpm": {
+        "id": "bpm",
+        "fields": {
+          "colRef": 37,
+          "label": "Tempo (BPM)",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 37,
+          "type": "Int",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": true,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Batida_s_utilisee_s_": {
+        "id": "Batida_s_utilisee_s_",
+        "fields": {
+          "colRef": 38,
+          "label": "Batida(s) utilisée(s)",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 38,
+          "type": "RefList:Batidas",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 42,
+          "visibleCol": 19,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Theme_s_des_paroles": {
+        "id": "Theme_s_des_paroles",
+        "fields": {
+          "colRef": 43,
+          "label": "Thème(s) des paroles",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 43,
+          "type": "ChoiceList",
+          "widgetOptions": "{\"widget\":\"TextBox\",\"choices\":[\"Putaria\",\"Amour\",\"Revendications politiques\",\"Référence au quartier d'origine\",\"Danse\",\"Référence à un baile\",\"Humour\",\"Référence au BPM de la musique\",\"Violence\",\"Jeux d'argent\",\"Crime organisé\",\"Instrumental / Pas de thème\",\"Argent\"],\"alignment\":\"left\",\"choiceOptions\":{}}",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Echelle_s_utilisee_s_": {
+        "id": "Echelle_s_utilisee_s_",
+        "fields": {
+          "colRef": 44,
+          "label": "Échelle(s) utilisée(s)",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 44,
+          "type": "Text",
+          "widgetOptions": "{\"widget\":\"TextBox\",\"alignment\":\"left\",\"choices\":[\"C# dorien\",\"Aucune échelle identifiée\"],\"choiceOptions\":{}}",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Harmonie": {
+        "id": "Harmonie",
+        "fields": {
+          "colRef": 45,
+          "label": "Harmonie",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 45,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Effectif": {
+        "id": "Effectif",
+        "fields": {
+          "colRef": 46,
+          "label": "Effectif",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 46,
+          "type": "ChoiceList",
+          "widgetOptions": "{\"widget\":\"TextBox\",\"choices\":[\"Voix\",\"Synthétiseur(s)\",\"Cuivres\",\"Boîte à rythme\",\"Beatbox\",\"Berimbau\",\"Référence à un baile en particulier\",\"Guitare électrique\",\"Membranophones\",\"808 / synthé basse\",\"Accordéon\",\"Guitare nylon\",\"Claps (mains)\",\"Orgue\",\"Saxophone\",\"Piano\",\"Cordes\",\"Sifflements\",\"Timbale\"],\"alignment\":\"left\",\"choiceOptions\":{}}",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Sous_genre_Tags": {
+        "id": "Sous_genre_Tags",
+        "fields": {
+          "colRef": 47,
+          "label": "Sous-genre / Tags",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 47,
+          "type": "RefList:Categories_de_funk",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 51,
+          "visibleCol": 49,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Samples_identifies": {
+        "id": "Samples_identifies",
+        "fields": {
+          "colRef": 52,
+          "label": "Samples identifiés",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 52,
+          "type": "RefList:Samples",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 54,
+          "visibleCol": 23,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Lignes_melodiques_recurrentes": {
+        "id": "Lignes_melodiques_recurrentes",
+        "fields": {
+          "colRef": 55,
+          "label": "Lignes mélodiques récurrentes",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 55,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Sequences_rythmiques_recurrentes": {
+        "id": "Sequences_rythmiques_recurrentes",
+        "fields": {
+          "colRef": 56,
+          "label": "Séquences rythmiques récurrentes",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 56,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "url": {
+        "id": "url",
+        "fields": {
+          "colRef": 59,
+          "label": "url",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 59,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Notes": {
+        "id": "Notes",
+        "fields": {
+          "colRef": 60,
+          "label": "Notes",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 60,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Mode_Tonalite": {
+        "id": "Mode_Tonalite",
+        "fields": {
+          "colRef": 61,
+          "label": "Mode / Tonalité",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 61,
+          "type": "ChoiceList",
+          "widgetOptions": "{\"widget\":\"TextBox\",\"alignment\":\"left\",\"choices\":[\"dorien\",\"atonal / pas de notes identifiables\",\"mineur\",\"phrygien\",\"mixloydien\",\"éolien\",\"majeur / ionien\",\"phrygien dominant\",\"pentatonique mineur\"],\"choiceOptions\":{}}",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Forme": {
+        "id": "Forme",
+        "fields": {
+          "colRef": 62,
+          "label": "Forme",
+          "isFormula": true,
+          "parentId": 3,
+          "parentPos": 62,
+          "type": "Any",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Harmonie_degres_": {
+        "id": "Harmonie_degres_",
+        "fields": {
+          "colRef": 63,
+          "label": "Harmonie (degrés)",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 63,
+          "type": "ChoiceList",
+          "widgetOptions": "{\"widget\":\"TextBox\",\"alignment\":\"left\",\"choices\":[\"i - v\",\"VI - V - i - V/VI\",\"i - VI - V\",\"i - VII - v - VI\",\"I - V/VI - VI - V\",\"i\",\"i - VI - III - VII\",\"I - IV - vi - V\"],\"choiceOptions\":{}}",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "duree": {
+        "id": "duree",
+        "fields": {
+          "colRef": 64,
+          "label": "Durée (secondes)",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 64,
+          "type": "Int",
+          "widgetOptions": "{\"widget\":\"TextBox\",\"alignment\":\"right\",\"decimals\":0,\"dateFormat\":\"YYYY-MM-DD\",\"timeFormat\":\"h:mma\",\"isCustomDateFormat\":false,\"isCustomTimeFormat\":false}",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": true,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Duree_MS": {
+        "id": "Duree_MS",
+        "fields": {
+          "colRef": 65,
+          "label": "Durée MS",
+          "isFormula": false,
+          "parentId": 3,
+          "parentPos": 65,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      }
+    },
+    "data": [
+      {
+        "id": 1,
+        "fields": {
+          "Nom_de_la_chanson": " Tá OK ",
+          "MC": [
+            "L",
+            5
+          ],
+          "DJ": [
+            "L",
+            4
+          ],
+          "Label": [
+            "L",
+            6
+          ],
+          "date": 1683158400,
+          "bpm": 120,
+          "Batida_s_utilisee_s_": [
+            "L",
+            2
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "do# dorien",
+          "Harmonie": "C#-add9 / G#-add9",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Synthétiseur(s)",
+            "Cuivres",
+            "Boîte à rythme"
+          ],
+          "Sous_genre_Tags": [
+            "L",
+            1
+          ],
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=aHBW_Nd_z8k",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "dorien"
+          ],
+          "Harmonie_degres_": [
+            "L",
+            "i - v"
+          ],
+          "duree": 117,
+          "Duree_MS": "1:57",
+          "Forme": null
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Nom_de_la_chanson": "Me Solta",
+          "MC": [
+            "L",
+            11
+          ],
+          "DJ": [
+            "L",
+            10
+          ],
+          "Label": [
+            "L",
+            3,
+            5
+          ],
+          "date": 1528070400,
+          "bpm": 140,
+          "Batida_s_utilisee_s_": [
+            "L",
+            7
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Référence au quartier d'origine",
+            "Référence à un baile"
+          ],
+          "Echelle_s_utilisee_s_": "mi - fa",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Synthétiseur(s)",
+            "Boîte à rythme",
+            "Beatbox"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "Triolets (voix)",
+          "url": "https://www.youtube.com/watch?v=FY3m6hMyh3g",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "atonal / pas de notes identifiables"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 226,
+          "Duree_MS": "3:46",
+          "Forme": null
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Nom_de_la_chanson": "Vem Me Satisfazer",
+          "MC": [
+            "L",
+            12
+          ],
+          "DJ": [
+            "L",
+            13
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1566259200,
+          "bpm": 150,
+          "Batida_s_utilisee_s_": [
+            "L",
+            7
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "sol mineur",
+          "Harmonie": "Ebmaj7 - D7 - Gmin7 - Bbsus",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Synthétiseur(s)",
+            "Boîte à rythme"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=79cMtpG-Wtc",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "mineur"
+          ],
+          "Harmonie_degres_": [
+            "L",
+            "VI - V - i - V/VI"
+          ],
+          "duree": 231,
+          "Duree_MS": "3:51",
+          "Forme": null
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Nom_de_la_chanson": "BOTA",
+          "MC": [
+            "L",
+            16
+          ],
+          "DJ": [
+            "L",
+            18
+          ],
+          "Label": [
+            "L",
+            7
+          ],
+          "date": 1769040000,
+          "bpm": 130,
+          "Batida_s_utilisee_s_": [
+            "L",
+            8
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria",
+            "Référence à un baile"
+          ],
+          "Echelle_s_utilisee_s_": "fa phrygien",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Synthétiseur(s)",
+            "Boîte à rythme",
+            "Berimbau"
+          ],
+          "Sous_genre_Tags": [
+            "L",
+            9
+          ],
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "fa - fa#",
+          "Sequences_rythmiques_recurrentes": "Triolets (voix)",
+          "url": "https://www.youtube.com/watch?v=hvlWHkd50Ik",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "phrygien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 72,
+          "Duree_MS": "1:12",
+          "Forme": null
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Nom_de_la_chanson": "Aquecimento das Maravilhas - QUADRADINHO DE OITO",
+          "MC": [
+            "L",
+            19,
+            22
+          ],
+          "DJ": [
+            "L",
+            20,
+            4
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1384300800,
+          "bpm": 130,
+          "Batida_s_utilisee_s_": [
+            "L",
+            10,
+            9
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Danse"
+          ],
+          "Echelle_s_utilisee_s_": "do mixolydien",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Beatbox",
+            "Beatbox",
+            "Synthétiseur(s)"
+          ],
+          "Sous_genre_Tags": [
+            "L",
+            10
+          ],
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "Triolets (synthés)",
+          "url": "https://www.youtube.com/watch?v=pXM6v3JnT7s",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "mixloydien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 164,
+          "Duree_MS": "2:44",
+          "Forme": null
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Nom_de_la_chanson": "Meu Carro Não Tem Porta Luva",
+          "MC": [
+            "L",
+            23
+          ],
+          "DJ": [
+            "L",
+            24
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1731369600,
+          "bpm": 135,
+          "Batida_s_utilisee_s_": [
+            "L",
+            7
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "si b éolien, si phrygien dominant",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme",
+            "Synthétiseur(s)"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=h6yNeHniFzY",
+          "Notes": "Basse appuie la quinte et la fondamentale",
+          "Mode_Tonalite": [
+            "L",
+            "phrygien",
+            "éolien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 160,
+          "Duree_MS": "2:40",
+          "Forme": null
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Nom_de_la_chanson": "Vamos pra Gaiola",
+          "MC": [
+            "L",
+            5
+          ],
+          "DJ": [
+            "L",
+            25
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1547164800,
+          "bpm": 150,
+          "Batida_s_utilisee_s_": [
+            "L",
+            10
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Référence au quartier d'origine",
+            "Référence à un baile"
+          ],
+          "Echelle_s_utilisee_s_": "fa# éolien",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme",
+            "Beatbox",
+            "Guitare électrique"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=0R6zBcV9JiY",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "éolien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 161,
+          "Duree_MS": "2:41",
+          "Forme": null
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Nom_de_la_chanson": "O Vovô Tá Casado",
+          "MC": [
+            "L",
+            26
+          ],
+          "DJ": [
+            "L",
+            27
+          ],
+          "Label": [
+            "L",
+            9
+          ],
+          "date": 1767744000,
+          "bpm": 130,
+          "Batida_s_utilisee_s_": [
+            "L",
+            11
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Référence au quartier d'origine",
+            "Putaria",
+            "Humour"
+          ],
+          "Echelle_s_utilisee_s_": "",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=mDDj5MrQRNQ",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "atonal / pas de notes identifiables"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 198,
+          "Duree_MS": "3:38",
+          "Forme": null
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Nom_de_la_chanson": "Aquecimento da Macumbinha",
+          "MC": null,
+          "DJ": [
+            "L",
+            28
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1483574400,
+          "bpm": 150,
+          "Batida_s_utilisee_s_": [
+            "L",
+            16
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Membranophones",
+            "808 / synthé basse"
+          ],
+          "Sous_genre_Tags": [
+            "L",
+            7,
+            10,
+            9
+          ],
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=Z47X-YI5ju8",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "atonal / pas de notes identifiables"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 180,
+          "Duree_MS": "3:00",
+          "Forme": null
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Nom_de_la_chanson": "Pixadão no Baile",
+          "MC": [
+            "L",
+            30,
+            31
+          ],
+          "DJ": [
+            "L",
+            29
+          ],
+          "Label": [
+            "L",
+            8
+          ],
+          "date": 1748563200,
+          "bpm": 130,
+          "Batida_s_utilisee_s_": [
+            "L",
+            1
+          ],
+          "Theme_s_des_paroles": null,
+          "Echelle_s_utilisee_s_": "ré phrygien",
+          "Harmonie": "pédale de ré",
+          "Effectif": [
+            "L",
+            "Voix",
+            "808 / synthé basse",
+            "Synthétiseur(s)",
+            "Boîte à rythme"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "ré - mi b - sol",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=5Yya7xUqhhE",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "phrygien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 198,
+          "Duree_MS": "3:18",
+          "Forme": null
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Nom_de_la_chanson": "Cai Cai Cai Cai",
+          "MC": null,
+          "DJ": [
+            "L",
+            32
+          ],
+          "Label": [
+            "L",
+            1
+          ],
+          "date": 1703721600,
+          "bpm": 150,
+          "Batida_s_utilisee_s_": [
+            "L",
+            3
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "808 / synthé basse",
+            "Boîte à rythme"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=8XbP4svhAH8",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "atonal / pas de notes identifiables"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 87,
+          "Duree_MS": "1:27",
+          "Forme": null
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Nom_de_la_chanson": "Tu Tá na Gaiola",
+          "MC": [
+            "L",
+            5
+          ],
+          "DJ": null,
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1538611200,
+          "bpm": 150,
+          "Batida_s_utilisee_s_": [
+            "L",
+            10,
+            18
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Référence à un baile"
+          ],
+          "Echelle_s_utilisee_s_": "ré mineur",
+          "Harmonie": "Dmin - Bb - A",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme",
+            "Beatbox",
+            "Accordéon",
+            "808 / synthé basse"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=c0KfWTjuqHM",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "mineur"
+          ],
+          "Harmonie_degres_": [
+            "L",
+            "i - VI - V"
+          ],
+          "duree": 124,
+          "Duree_MS": "2:04",
+          "Forme": null
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Nom_de_la_chanson": "Oh Garota Quero Você Só Pra Mim",
+          "MC": [
+            "L",
+            33
+          ],
+          "DJ": [
+            "L",
+            34
+          ],
+          "Label": [
+            "L",
+            10
+          ],
+          "date": 1734393600,
+          "bpm": 138,
+          "Batida_s_utilisee_s_": [
+            "L",
+            5
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Jeux d'argent",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "si éolien / la éolien",
+          "Harmonie": "Bmin - A - F#min - G",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Synthétiseur(s)",
+            "Boîte à rythme",
+            "Synthétiseur(s)"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": [
+            "L",
+            7
+          ],
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=sIkIzcYpouA",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "éolien"
+          ],
+          "Harmonie_degres_": [
+            "L",
+            "i - VII - v - VI"
+          ],
+          "duree": 168,
+          "Duree_MS": "2:48",
+          "Forme": null
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Nom_de_la_chanson": "Vai Novinha Ah Ah",
+          "MC": null,
+          "DJ": [
+            "L",
+            35,
+            36
+          ],
+          "Label": [
+            "L",
+            11
+          ],
+          "date": 1684800000,
+          "bpm": 130,
+          "Batida_s_utilisee_s_": [
+            "L",
+            2
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria",
+            "Référence au BPM de la musique"
+          ],
+          "Echelle_s_utilisee_s_": "mi mineur",
+          "Harmonie": "Emin - C - B",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme",
+            "Accordéon"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": [
+            "L",
+            6
+          ],
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=CfaSlZ2cFRM",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "mineur"
+          ],
+          "Harmonie_degres_": [
+            "L",
+            "i - VI - V"
+          ],
+          "duree": 122,
+          "Duree_MS": "2:02",
+          "Forme": null
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Nom_de_la_chanson": "Aquecimento do Santo Amaro",
+          "MC": [
+            "L",
+            40,
+            39
+          ],
+          "DJ": [
+            "L",
+            38
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1573948800,
+          "bpm": 170,
+          "Batida_s_utilisee_s_": [
+            "L",
+            3
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Référence à un baile",
+            "Référence à un baile"
+          ],
+          "Echelle_s_utilisee_s_": "fa phrygien ?",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "808 / synthé basse",
+            "Boîte à rythme",
+            "Voix"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "lab (x3) - fa - sol b -fa - sol",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=UGMlnR1C0wg",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "phrygien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 128,
+          "Duree_MS": "2:08",
+          "Forme": null
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Nom_de_la_chanson": "Mulher do Borogodó",
+          "MC": [
+            "L",
+            2
+          ],
+          "DJ": [
+            "L",
+            41
+          ],
+          "Label": [
+            "L",
+            12
+          ],
+          "date": 1658448000,
+          "bpm": 130,
+          "Batida_s_utilisee_s_": [
+            "L",
+            8
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria",
+            "Revendications politiques"
+          ],
+          "Echelle_s_utilisee_s_": "la b éolien",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Synthétiseur(s)",
+            "808 / synthé basse",
+            "Boîte à rythme"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=T5zRA61Xz8c",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "éolien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 126,
+          "Duree_MS": "2:06",
+          "Forme": null
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Nom_de_la_chanson": "Mamãe da Putaria",
+          "MC": [
+            "L",
+            2,
+            14
+          ],
+          "DJ": [
+            "L",
+            43
+          ],
+          "Label": [
+            "L",
+            4
+          ],
+          "date": 1552003200,
+          "bpm": 130,
+          "Batida_s_utilisee_s_": [
+            "L",
+            7
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria",
+            "Revendications politiques"
+          ],
+          "Echelle_s_utilisee_s_": "fa# éolien",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Synthétiseur(s)",
+            "Boîte à rythme",
+            "808 / synthé basse"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "fa# - sol# - la - la - sol# - ré - do#",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=vw09YpI_QMQ",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "éolien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 215,
+          "Duree_MS": "3:35",
+          "Forme": null
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Nom_de_la_chanson": "Nois É Malvadão Mesmo",
+          "MC": [
+            "L",
+            44
+          ],
+          "DJ": [
+            "L",
+            45
+          ],
+          "Label": [
+            "L",
+            13
+          ],
+          "date": 1631491200,
+          "bpm": 170,
+          "Batida_s_utilisee_s_": [
+            "L",
+            7
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=wvfr1lZmfig",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "atonal / pas de notes identifiables"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 155,
+          "Duree_MS": "2:35",
+          "Forme": null
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Nom_de_la_chanson": "PUT@RIA!",
+          "MC": [
+            "L",
+            2,
+            47,
+            46
+          ],
+          "DJ": [
+            "L",
+            3
+          ],
+          "Label": [
+            "L",
+            14
+          ],
+          "date": 1683849600,
+          "bpm": 150,
+          "Batida_s_utilisee_s_": [
+            "L",
+            11
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "do# mineur",
+          "Harmonie": "C#min 7 - Esus13 - Amaj7 - B#dim7",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Synthétiseur(s)",
+            "Cuivres",
+            "Boîte à rythme",
+            "Guitare nylon",
+            "808 / synthé basse"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=fP8AT3EbiSY",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "mineur"
+          ],
+          "Harmonie_degres_": [
+            "L",
+            "I - V/VI - VI - V"
+          ],
+          "duree": 259,
+          "Duree_MS": "4:19",
+          "Forme": null
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Nom_de_la_chanson": "Beijinho no Ombro",
+          "MC": [
+            "L",
+            48
+          ],
+          "DJ": [
+            "L",
+            49
+          ],
+          "Label": [
+            "L",
+            15
+          ],
+          "date": 1374105600,
+          "bpm": 130,
+          "Batida_s_utilisee_s_": [
+            "L",
+            10
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Instrumental / Pas de thème"
+          ],
+          "Echelle_s_utilisee_s_": "si éolien",
+          "Harmonie": "B min - F# min",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Synthétiseur(s)",
+            "Orgue",
+            "Claps (mains)",
+            "Boîte à rythme",
+            "808 / synthé basse"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=AVSLGPFVBes",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "éolien"
+          ],
+          "Harmonie_degres_": [
+            "L",
+            "i - v"
+          ],
+          "duree": 180,
+          "Duree_MS": "3:00",
+          "Forme": null
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Nom_de_la_chanson": "Equipe Caos",
+          "MC": [
+            "L",
+            26,
+            51
+          ],
+          "DJ": [
+            "L",
+            50,
+            27
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1760486400,
+          "bpm": 130,
+          "Batida_s_utilisee_s_": [
+            "L",
+            11
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme",
+            "808 / synthé basse"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=2xzT8VlSjv4",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "atonal / pas de notes identifiables"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 183,
+          "Duree_MS": "3:03",
+          "Forme": null
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Nom_de_la_chanson": "Joga A Tabaca",
+          "MC": [
+            "L",
+            29,
+            7
+          ],
+          "DJ": [
+            "L",
+            50
+          ],
+          "Label": [
+            "L",
+            8
+          ],
+          "date": 1770249600,
+          "bpm": 134,
+          "Batida_s_utilisee_s_": [
+            "L",
+            7
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "do éolien",
+          "Harmonie": "C min",
+          "Effectif": [
+            "L",
+            "Voix",
+            "808 / synthé basse",
+            "Boîte à rythme",
+            "Saxophone"
+          ],
+          "Sous_genre_Tags": [
+            "L",
+            1
+          ],
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=ZQ9PVU1WS8k",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "éolien"
+          ],
+          "Harmonie_degres_": [
+            "L",
+            "i"
+          ],
+          "duree": 125,
+          "Duree_MS": " 2:05",
+          "Forme": null
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Nom_de_la_chanson": "Se Eu Engravidar A Culpa É Sua Não É Minha",
+          "MC": [
+            "L",
+            53
+          ],
+          "DJ": [
+            "L",
+            3
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1545264000,
+          "bpm": 150,
+          "Batida_s_utilisee_s_": [
+            "L",
+            9
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "fa éolien",
+          "Harmonie": "F min - Db - Ab - Eb",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Piano",
+            "Boîte à rythme"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=qBDxlJci_f4",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "éolien"
+          ],
+          "Harmonie_degres_": [
+            "L",
+            "i - VI - III - VII"
+          ],
+          "duree": 130,
+          "Duree_MS": "2:10",
+          "Forme": null
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Nom_de_la_chanson": "VIDA DE NOVELA ( AO VIVO NO JACARÉ )",
+          "MC": [
+            "L",
+            52
+          ],
+          "DJ": [
+            "L",
+            18
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1543968000,
+          "bpm": 140,
+          "Batida_s_utilisee_s_": [
+            "L",
+            2
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Revendications politiques"
+          ],
+          "Echelle_s_utilisee_s_": "",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Beatbox",
+            "Boîte à rythme"
+          ],
+          "Sous_genre_Tags": [
+            "L",
+            3
+          ],
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=gGqgQH3oSIM",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "atonal / pas de notes identifiables"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 162,
+          "Duree_MS": "2:42",
+          "Forme": null
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Nom_de_la_chanson": "Oh pietra joga essa xrc no meu fuzil de luneta",
+          "MC": null,
+          "DJ": [
+            "L",
+            54
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1620864000,
+          "bpm": 170,
+          "Batida_s_utilisee_s_": [
+            "L",
+            2,
+            10
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "ré éolien",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme",
+            "Beatbox",
+            "808 / synthé basse"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=xiEayYEHNfQ",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "éolien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 148,
+          "Duree_MS": "2:28",
+          "Forme": null
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Nom_de_la_chanson": "Mano Zafe, Mano índio",
+          "MC": [
+            "L",
+            55,
+            56
+          ],
+          "DJ": [
+            "L",
+            57
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1681344000,
+          "bpm": 135,
+          "Batida_s_utilisee_s_": [
+            "L",
+            7
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria",
+            "Référence au BPM de la musique"
+          ],
+          "Echelle_s_utilisee_s_": "",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme",
+            "808 / synthé basse",
+            "Cuivres"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "do - sib - la",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=IUQEkeVda-E",
+          "Notes": "",
+          "Mode_Tonalite": null,
+          "Harmonie_degres_": null,
+          "duree": 129,
+          "Duree_MS": "2:09",
+          "Forme": null
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Nom_de_la_chanson": "Pega a Rajada de 30",
+          "MC": [
+            "L",
+            58
+          ],
+          "DJ": [
+            "L",
+            59
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1683676800,
+          "bpm": 136,
+          "Batida_s_utilisee_s_": [
+            "L",
+            7
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Instrumental / Pas de thème"
+          ],
+          "Echelle_s_utilisee_s_": "mi éolien",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "808 / synthé basse",
+            "Boîte à rythme"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": [
+            "L",
+            1,
+            2
+          ],
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=Da2MEBV72bg",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "éolien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 141,
+          "Duree_MS": " 2:21",
+          "Forme": null
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Nom_de_la_chanson": "Saquarema",
+          "MC": [
+            "L",
+            60,
+            61
+          ],
+          "DJ": [
+            "L",
+            62,
+            63
+          ],
+          "Label": [
+            "L",
+            1
+          ],
+          "date": 1595548800,
+          "bpm": 150,
+          "Batida_s_utilisee_s_": [
+            "L",
+            7
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "Fa# éolien (/ Ré éolien?)",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Cordes",
+            "Boîte à rythme",
+            "808 / synthé basse"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=6BvYct8_mCU",
+          "Notes": "polytonalité du fait du réglage de l'autotune ? (au refrain : un chanteur en fa#, l'autre en ré, en homorythmie, diaphonie?)",
+          "Mode_Tonalite": [
+            "L",
+            "éolien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 204,
+          "Duree_MS": "3:24",
+          "Forme": null
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Nom_de_la_chanson": "De Madrugada Você Me Liga",
+          "MC": [
+            "L",
+            60
+          ],
+          "DJ": [
+            "L",
+            25
+          ],
+          "Label": [
+            "L",
+            10
+          ],
+          "date": 1762214400,
+          "bpm": 136,
+          "Batida_s_utilisee_s_": [
+            "L",
+            11,
+            14
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": " la éolien",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme",
+            "808 / synthé basse"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=5M1mjPc5lfw",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "éolien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 148,
+          "Duree_MS": "2:28",
+          "Forme": null
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Nom_de_la_chanson": "Putaria 2000",
+          "MC": [
+            "L",
+            15
+          ],
+          "DJ": [
+            "L",
+            64,
+            65
+          ],
+          "Label": [
+            "L",
+            1
+          ],
+          "date": 1637798400,
+          "bpm": 150,
+          "Batida_s_utilisee_s_": [
+            "L",
+            6
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "808 / synthé basse",
+            "Boîte à rythme"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "basse : la1 - la 1- la 1- la2 - mi1 - la1",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=NcpgEclW02c",
+          "Notes": "",
+          "Mode_Tonalite": null,
+          "Harmonie_degres_": null,
+          "duree": 112,
+          "Duree_MS": "1:52",
+          "Forme": null
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Nom_de_la_chanson": "Plof Plof",
+          "MC": [
+            "L",
+            66
+          ],
+          "DJ": [
+            "L",
+            67
+          ],
+          "Label": [
+            "L",
+            13
+          ],
+          "date": 1681862400,
+          "bpm": 135,
+          "Batida_s_utilisee_s_": [
+            "L",
+            7
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Cuivres",
+            "Boîte à rythme"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "trompette : ré3 - mi3 - fa#3 - mi3 - mi3 - ré3 - la2 - ré3 -mi3 - ré3 - ré3 - la2",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=sqGHh7vj-Yg",
+          "Notes": "trompettes jouent une séquence en ré majeur",
+          "Mode_Tonalite": null,
+          "Harmonie_degres_": null,
+          "duree": 144,
+          "Duree_MS": "2:24",
+          "Forme": null
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Nom_de_la_chanson": "Sento no bico da glock",
+          "MC": [
+            "L",
+            53,
+            60
+          ],
+          "DJ": [
+            "L",
+            3
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1538611200,
+          "bpm": 150,
+          "Batida_s_utilisee_s_": [
+            "L",
+            10
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "mi majeur",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme",
+            "Beatbox"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=csBCHwzunLI",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "majeur / ionien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 192,
+          "Duree_MS": "3:12",
+          "Forme": null
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Nom_de_la_chanson": "Não Temos Escolha Você Vai Tem Que Senta",
+          "MC": [
+            "L",
+            68,
+            70
+          ],
+          "DJ": [
+            "L",
+            69
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1676332800,
+          "bpm": 136,
+          "Batida_s_utilisee_s_": [
+            "L",
+            7
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "",
+          "Harmonie": "",
+          "Effectif": null,
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=dL6HWzmYQwE",
+          "Notes": "Basse fait une pompe I^ V^ en mi",
+          "Mode_Tonalite": null,
+          "Harmonie_degres_": null,
+          "duree": 103,
+          "Duree_MS": "1:43",
+          "Forme": null
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Nom_de_la_chanson": "Carro Bicho",
+          "MC": [
+            "L",
+            71,
+            72
+          ],
+          "DJ": [
+            "L",
+            73
+          ],
+          "Label": [
+            "L",
+            17
+          ],
+          "date": 1605744000,
+          "bpm": 170,
+          "Batida_s_utilisee_s_": [
+            "L",
+            7
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria",
+            "Crime organisé"
+          ],
+          "Echelle_s_utilisee_s_": "",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme",
+            "Berimbau"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=X7js186b3lY",
+          "Notes": "berimbau en si, kick sur tous les temps",
+          "Mode_Tonalite": null,
+          "Harmonie_degres_": null,
+          "duree": 102,
+          "Duree_MS": "1:42",
+          "Forme": null
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Nom_de_la_chanson": "É O Antares",
+          "MC": null,
+          "DJ": [
+            "L",
+            74
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1654128000,
+          "bpm": 160,
+          "Batida_s_utilisee_s_": [
+            "L",
+            2
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Référence à un baile"
+          ],
+          "Echelle_s_utilisee_s_": "fa# majeur",
+          "Harmonie": "F# - B - D# min - C#",
+          "Effectif": null,
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=hIb56vTdREs",
+          "Notes": "Sample à identifier",
+          "Mode_Tonalite": [
+            "L",
+            "majeur / ionien"
+          ],
+          "Harmonie_degres_": [
+            "L",
+            "I - IV - vi - V"
+          ],
+          "duree": 222,
+          "Duree_MS": "3:42",
+          "Forme": null
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Nom_de_la_chanson": "Vai Tomando Na Galopada",
+          "MC": [
+            "L",
+            77
+          ],
+          "DJ": [
+            "L",
+            77
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1765324800,
+          "bpm": 140,
+          "Batida_s_utilisee_s_": [
+            "L",
+            21
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "",
+          "Harmonie": "",
+          "Effectif": null,
+          "Sous_genre_Tags": null,
+          "Samples_identifies": [
+            "L",
+            3,
+            4
+          ],
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=A7A8Wgp58jc",
+          "Notes": "Basse fait une pompe I - V en ré",
+          "Mode_Tonalite": null,
+          "Harmonie_degres_": null,
+          "duree": 146,
+          "Duree_MS": "2:26",
+          "Forme": null
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Nom_de_la_chanson": "O Amor Acabou",
+          "MC": [
+            "L",
+            2
+          ],
+          "DJ": [
+            "L",
+            43,
+            78
+          ],
+          "Label": [
+            "L",
+            4
+          ],
+          "date": 1477872000,
+          "bpm": 130,
+          "Batida_s_utilisee_s_": [
+            "L",
+            4
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "la phrygien dominant",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme",
+            "Berimbau",
+            "808 / synthé basse",
+            "Cuivres"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": [
+            "L",
+            3
+          ],
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=nbwouN77Ef0",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "phrygien dominant"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 148,
+          "Duree_MS": "2:28",
+          "Forme": null
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Nom_de_la_chanson": " Vou Investir Em Você",
+          "MC": [
+            "L",
+            15,
+            2
+          ],
+          "DJ": [
+            "L",
+            79
+          ],
+          "Label": [
+            "L",
+            18
+          ],
+          "date": 1764633600,
+          "bpm": 130,
+          "Batida_s_utilisee_s_": [
+            "L",
+            4,
+            18,
+            22
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria",
+            "Argent"
+          ],
+          "Echelle_s_utilisee_s_": "ré éolien",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Cuivres",
+            "808 / synthé basse",
+            "Boîte à rythme",
+            "Beatbox",
+            "Saxophone",
+            "Synthétiseur(s)"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=I_jBp08Kdgw",
+          "Notes": "https://gitlab.com/noeblinbiao/transcriptions/-/blob/1f640317a126805482288632e6947ed6c38695e5/VouInvestirEmVoce.pdf",
+          "Mode_Tonalite": [
+            "L",
+            "éolien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 173,
+          "Duree_MS": "2:53",
+          "Forme": null
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Nom_de_la_chanson": "Chill Bill VS Funk",
+          "MC": [
+            "L",
+            80
+          ],
+          "DJ": [
+            "L",
+            81,
+            82,
+            83
+          ],
+          "Label": [
+            "L",
+            3
+          ],
+          "date": 1650067200,
+          "bpm": 140,
+          "Batida_s_utilisee_s_": [
+            "L",
+            7
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "808 / synthé basse",
+            "Boîte à rythme",
+            "Sifflements"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "basse : la - ré - la",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=mAgu9XFUmEs",
+          "Notes": "en la phrygien ? (sifflements en sol ou ré éolien)",
+          "Mode_Tonalite": null,
+          "Harmonie_degres_": null,
+          "duree": 145,
+          "Duree_MS": "2:25",
+          "Forme": null
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Nom_de_la_chanson": "Tem Mel na Xereca",
+          "MC": [
+            "L",
+            52
+          ],
+          "DJ": [
+            "L",
+            84,
+            85
+          ],
+          "Label": [
+            "L",
+            2
+          ],
+          "date": 1716336000,
+          "bpm": 130,
+          "Batida_s_utilisee_s_": [
+            "L",
+            4
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "sol majeur",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Synthétiseur(s)",
+            "Boîte à rythme",
+            "Beatbox",
+            "808 / synthé basse"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=OSxvdEbtwmU",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "majeur / ionien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 156,
+          "Duree_MS": "2:36",
+          "Forme": null
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Nom_de_la_chanson": "Uma Semana Sem Foder",
+          "MC": [
+            "L",
+            86
+          ],
+          "DJ": [
+            "L",
+            87
+          ],
+          "Label": [
+            "L",
+            19
+          ],
+          "date": 1600905600,
+          "bpm": 160,
+          "Batida_s_utilisee_s_": [
+            "L",
+            7
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "(fa sol lab sib)",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Synthétiseur(s)",
+            "Boîte à rythme",
+            "808 / synthé basse"
+          ],
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=rBqESvKbQo4",
+          "Notes": "Kick basses coupées sur tous les temps",
+          "Mode_Tonalite": null,
+          "Harmonie_degres_": null,
+          "duree": 144,
+          "Duree_MS": " 2:24",
+          "Forme": null
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Nom_de_la_chanson": "EMPINA RABETA NO SANTO AMARO",
+          "MC": [
+            "L",
+            40,
+            89
+          ],
+          "DJ": [
+            "L",
+            17,
+            88
+          ],
+          "Label": [
+            "L",
+            1
+          ],
+          "date": 1747008000,
+          "bpm": 140,
+          "Batida_s_utilisee_s_": [
+            "L",
+            2
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria",
+            "Référence à un baile"
+          ],
+          "Echelle_s_utilisee_s_": "",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Guitare électrique",
+            "Boîte à rythme"
+          ],
+          "Sous_genre_Tags": [
+            "L",
+            9
+          ],
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "ostinato en si à la guitare électrique",
+          "url": "https://soundcloud.com/djjonesmsl/empina-rabeta-no-santo-amaro?in=fernandinhob20/sets/baile-do-santo-amaro-rj-2025&si=7ef2e13941bb40d0a16fbb9402040259&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+          "Notes": " kick accordé en mi",
+          "Mode_Tonalite": [
+            "L",
+            "atonal / pas de notes identifiables"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 167,
+          "Duree_MS": "2:47",
+          "Forme": null
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Nom_de_la_chanson": "COMO A BANDIDA CHEGA",
+          "MC": [
+            "L",
+            90
+          ],
+          "DJ": [
+            "L",
+            17
+          ],
+          "Label": [
+            "L",
+            1
+          ],
+          "date": 1744934400,
+          "bpm": 140,
+          "Batida_s_utilisee_s_": [
+            "L",
+            11
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "(fa sol do réb)",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme",
+            "Piano"
+          ],
+          "Sous_genre_Tags": [
+            "L",
+            9
+          ],
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://on.soundcloud.com/GIVOkRuRiiXWmflQFZ",
+          "Notes": "",
+          "Mode_Tonalite": null,
+          "Harmonie_degres_": null,
+          "duree": 147,
+          "Duree_MS": " 2:27",
+          "Forme": null
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Nom_de_la_chanson": "Escorrega Pros Pitbull do Santo Amaro",
+          "MC": [
+            "L",
+            91,
+            92
+          ],
+          "DJ": [
+            "L",
+            17
+          ],
+          "Label": [
+            "L",
+            1
+          ],
+          "date": 1738281600,
+          "bpm": 140,
+          "Batida_s_utilisee_s_": [
+            "L",
+            6
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "do# éolien (basse en ré#)",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme",
+            "Cuivres"
+          ],
+          "Sous_genre_Tags": [
+            "L",
+            9
+          ],
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": " voix : do# mi fa# sol# (i^ iii^ iv^ v^)",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://soundcloud.com/leodazonasul/comissao-de-frente-feat-dj?in=fernandinhob20/sets/baile-do-santo-amaro-rj-2025&si=7c320a28fdf842f8af3747dfbcfa675a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+          "Notes": " polytonalité : mélodie en do# éolien, basse = pédale de ré# ",
+          "Mode_Tonalite": [
+            "L",
+            "éolien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 214,
+          "Duree_MS": "3:34",
+          "Forme": null
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Nom_de_la_chanson": "Comissão de Frente",
+          "MC": [
+            "L",
+            93
+          ],
+          "DJ": [
+            "L",
+            17,
+            94
+          ],
+          "Label": [
+            "L",
+            1
+          ],
+          "date": 1738108800,
+          "bpm": 130,
+          "Batida_s_utilisee_s_": [
+            "L",
+            18
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria",
+            "Référence à un baile"
+          ],
+          "Echelle_s_utilisee_s_": "voix en fa majeur puis en do majeur, timbale et basse en do",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Timbale",
+            "Voix",
+            "Boîte à rythme"
+          ],
+          "Sous_genre_Tags": [
+            "L",
+            9
+          ],
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://on.soundcloud.com/Lpw0eYPfs220NlAoGx",
+          "Notes": "polytonalité : mélodie en fa majeur et basse en do majeur",
+          "Mode_Tonalite": [
+            "L",
+            "majeur / ionien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 126,
+          "Duree_MS": "2:06",
+          "Forme": null
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Nom_de_la_chanson": "VAI TOMANDO X DE BAIXO PRA CIMA",
+          "MC": [
+            "L",
+            95,
+            96,
+            97
+          ],
+          "DJ": [
+            "L",
+            17
+          ],
+          "Label": [
+            "L",
+            1
+          ],
+          "date": 1728691200,
+          "bpm": 130,
+          "Batida_s_utilisee_s_": [
+            "L",
+            6,
+            19
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria",
+            "Référence à un baile",
+            "Référence au quartier d'origine"
+          ],
+          "Echelle_s_utilisee_s_": "",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme",
+            "Berimbau",
+            "Membranophones"
+          ],
+          "Sous_genre_Tags": [
+            "L",
+            9
+          ],
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "\"vem jogando\" si do do",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://soundcloud.com/mcfg-music/vai-tomando-x-de-baixo-pra?in=fernandinhob20/sets/baile-do-santo-amaro-rj-2025&si=bfbbcea955164fbcbed4aa8e97ed19fd&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+          "Notes": "berimbau en sib",
+          "Mode_Tonalite": null,
+          "Harmonie_degres_": null,
+          "duree": 134,
+          "Duree_MS": " 2:14",
+          "Forme": null
+        }
+      },
+      {
+        "id": 50,
+        "fields": {
+          "Nom_de_la_chanson": "EVOLUTION DO SANTO AMARO",
+          "MC": [
+            "L",
+            98
+          ],
+          "DJ": [
+            "L",
+            99,
+            17
+          ],
+          "Label": [
+            "L",
+            1
+          ],
+          "date": 1727222400,
+          "bpm": 130,
+          "Batida_s_utilisee_s_": [
+            "L",
+            19
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria",
+            "Référence à un baile"
+          ],
+          "Echelle_s_utilisee_s_": "mi majeur",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme",
+            "Membranophones"
+          ],
+          "Sous_genre_Tags": [
+            "L",
+            9
+          ],
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://soundcloud.com/gabriel-oliveira-507067609/evolution-do-santo-amaro-dj-sorriso-22-dj-fernandinho-b20-dj-fabin?in=fernandinhob20/sets/baile-do-santo-amaro-rj-2025&si=c757cf1325184ddb9c085f5f6e818df5&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+          "Notes": "",
+          "Mode_Tonalite": [
+            "L",
+            "majeur / ionien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 159,
+          "Duree_MS": "2:29",
+          "Forme": null
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Nom_de_la_chanson": "XOTA PISCANDO",
+          "MC": [
+            "L",
+            100,
+            72
+          ],
+          "DJ": [
+            "L",
+            94,
+            17,
+            99
+          ],
+          "Label": [
+            "L",
+            1
+          ],
+          "date": 1731888000,
+          "bpm": 140,
+          "Batida_s_utilisee_s_": [
+            "L",
+            7
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria",
+            "Référence à un baile"
+          ],
+          "Echelle_s_utilisee_s_": " fa éolien",
+          "Harmonie": "i",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Boîte à rythme",
+            "808 / synthé basse",
+            "Cuivres",
+            "Synthétiseur(s)"
+          ],
+          "Sous_genre_Tags": [
+            "L",
+            9
+          ],
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://soundcloud.com/djsorriso22-music/xota-piscando-feat-dj-jonatan?in=fernandinhob20/sets/baile-do-santo-amaro-rj-2025&si=4465ca370b034576b9d6a2e339f623f8&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+          "Notes": "synthé joue la séquence rythmique du funk (accord de fa mineur)",
+          "Mode_Tonalite": [
+            "L",
+            "éolien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 120,
+          "Duree_MS": "2:00",
+          "Forme": null
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Nom_de_la_chanson": "Sábado É Dia de Baile do Santo Amaro",
+          "MC": [
+            "L",
+            101,
+            55
+          ],
+          "DJ": [
+            "L",
+            17
+          ],
+          "Label": [
+            "L",
+            1
+          ],
+          "date": 1718928000,
+          "bpm": 140,
+          "Batida_s_utilisee_s_": [
+            "L",
+            15
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria",
+            "Référence à un baile",
+            "Crime organisé"
+          ],
+          "Echelle_s_utilisee_s_": "mi éolien ",
+          "Harmonie": " ",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Synthétiseur(s)",
+            "808 / synthé basse",
+            "Boîte à rythme"
+          ],
+          "Sous_genre_Tags": [
+            "L",
+            9
+          ],
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://soundcloud.com/mcnegritinmcrosedatretadjfernandinhob20/sabado-e-dia-de-baile-do-santo?in=fernandinhob20/sets/baile-do-santo-amaro-rj-2025&si=81e7524882564e6d84a49bdfcc40fb87&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+          "Notes": "\"a tropa do Santo Amaro vai te deixar olhadinha\" : mi mineur pentatonique",
+          "Mode_Tonalite": [
+            "L",
+            "éolien"
+          ],
+          "Harmonie_degres_": null,
+          "duree": 192,
+          "Duree_MS": " 3:12",
+          "Forme": null
+        }
+      },
+      {
+        "id": 53,
+        "fields": {
+          "Nom_de_la_chanson": "Aquecimento das Abusadas",
+          "MC": null,
+          "DJ": [
+            "L",
+            102,
+            103
+          ],
+          "Label": [
+            "L",
+            1
+          ],
+          "date": 1730851200,
+          "bpm": 150,
+          "Batida_s_utilisee_s_": [
+            "L",
+            6
+          ],
+          "Theme_s_des_paroles": [
+            "L",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "(sol sib do)",
+          "Harmonie": "",
+          "Effectif": [
+            "L",
+            "Voix",
+            "Membranophones",
+            "808 / synthé basse",
+            "Boîte à rythme",
+            "Cuivres"
+          ],
+          "Sous_genre_Tags": [
+            "L",
+            10,
+            9
+          ],
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://soundcloud.com/trilogiadosantoamarodjbatata/aquecimento-das-abusadas?in=fernandinhob20/sets/baile-do-santo-amaro-rj-2025&si=813b62b257df4ca99b19461257b7f368&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+          "Notes": "passages totalement ternaires, riff de trompette du début utilise la blue note (do#), 808 en do",
+          "Mode_Tonalite": null,
+          "Harmonie_degres_": null,
+          "duree": 105,
+          "Duree_MS": "1:45",
+          "Forme": null
+        }
+      },
+      {
+        "id": 54,
+        "fields": {
+          "Nom_de_la_chanson": "Evoluiu",
+          "MC": [
+            "L",
+            5
+          ],
+          "DJ": [
+            "L",
+            4
+          ],
+          "Label": [
+            "L",
+            20
+          ],
+          "date": 1572739200,
+          "bpm": 150,
+          "Batida_s_utilisee_s_": null,
+          "Theme_s_des_paroles": [
+            "L",
+            "Référence au BPM de la musique",
+            "Putaria"
+          ],
+          "Echelle_s_utilisee_s_": "",
+          "Harmonie": "",
+          "Effectif": null,
+          "Sous_genre_Tags": null,
+          "Samples_identifies": null,
+          "Lignes_melodiques_recurrentes": "",
+          "Sequences_rythmiques_recurrentes": "",
+          "url": "https://www.youtube.com/watch?v=_VsBsZFG51Q",
+          "Notes": "",
+          "Mode_Tonalite": null,
+          "Harmonie_degres_": null,
+          "duree": 181,
+          "Duree_MS": "3:01",
+          "Forme": null
+        }
+      }
+    ],
+    "id": "Morceaux_Analyses",
+    "metadata": {
+      "tableRef": 3,
+      "primaryViewId": 3,
+      "summarySourceTable": 0,
+      "onDemand": false,
+      "rawViewSectionRef": 8,
+      "recordCardViewSectionRef": 9
+    }
+  },
+  "Musiciens": {
+    "columns": {
+      "Nom": {
+        "id": "Nom",
+        "fields": {
+          "colRef": 14,
+          "label": "Nom",
+          "isFormula": false,
+          "parentId": 4,
+          "parentPos": 14,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Quartier": {
+        "id": "Quartier",
+        "fields": {
+          "colRef": 15,
+          "label": "Quartier",
+          "isFormula": false,
+          "parentId": 4,
+          "parentPos": 15,
+          "type": "Ref:Quartiers",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 17,
+          "visibleCol": 8,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Type": {
+        "id": "Type",
+        "fields": {
+          "colRef": 16,
+          "label": "Type",
+          "isFormula": false,
+          "parentId": 4,
+          "parentPos": 16,
+          "type": "ChoiceList",
+          "widgetOptions": "{\"widget\":\"TextBox\",\"choices\":[\"MC\",\"DJ\",\"Producteur.ice\",\"Groupe\",\"Rappeur.euse\",\"Chanteur.euse\"],\"alignment\":\"left\",\"choiceOptions\":{}}",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      }
+    },
+    "data": [
+      {
+        "id": 1,
+        "fields": {
+          "Nom": "DJ Ingrid",
+          "Quartier": 1,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Nom": "MC Carol",
+          "Quartier": 5,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Nom": "DJ Gabriel do Borel",
+          "Quartier": 6,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Nom": "DJ Dennis",
+          "Quartier": 8,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Nom": "MC Kevin o Chris",
+          "Quartier": 8,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Nom": "DJ Luciano Oliveira",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ"
+          ]
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Nom": "Anitta",
+          "Quartier": 9,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Nom": "Pedro Sampaio",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Nom": "Carlos do Complexo ",
+          "Quartier": 2,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Nom": "Rennan da Penha",
+          "Quartier": 7,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Nom": "Nego do Borel",
+          "Quartier": 6,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Nom": "MC Ingryd",
+          "Quartier": 10,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Nom": "DJ Henrique da VK",
+          "Quartier": 10,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Nom": "Tati Quebra Barraco",
+          "Quartier": 11,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Nom": "Puterrier",
+          "Quartier": 12,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Nom": "Ludmilla",
+          "Quartier": 8,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Nom": "Fernandinho B20",
+          "Quartier": 1,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Nom": "Inconnu",
+          "Quartier": 0,
+          "Type": null
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Nom": "Bonde das Maravilhas",
+          "Quartier": 14,
+          "Type": [
+            "L",
+            "Groupe"
+          ]
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Nom": "DJ Diogo",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Nom": "DJ Daniel",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Nom": "MC Thaysa",
+          "Quartier": 14,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Nom": "MC Rodrigo do CN",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Nom": "DJ Natan 22",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Nom": "FP do Trem Bala",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Nom": "Biurifol",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Nom": "DJ Emige",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Nom": "DJ Pop Andrade",
+          "Quartier": 15,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Nom": "Papatinho",
+          "Quartier": 16,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Nom": "L7NNON",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "Rappeur.euse"
+          ]
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Nom": "LEALL",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "Rappeur.euse"
+          ]
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Nom": "DJ Ramon Sucesso",
+          "Quartier": 17,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Nom": "Oruam",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC",
+            "Rappeur.euse"
+          ]
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Nom": "DJ LC da Roça",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Nom": "DJ Dyamante",
+          "Quartier": 18,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Nom": "DJ Rafael Felix",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Nom": "Mr Catra",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Nom": "DJ Magrinho KM2",
+          "Quartier": 1,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Nom": "MC JL",
+          "Quartier": 1,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Nom": "MC Máscara",
+          "Quartier": 1,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Nom": "Goes",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Nom": "Heavy Baile",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "Groupe"
+          ]
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Nom": "Leo Justi",
+          "Quartier": 19,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Nom": "DJ JL O Único",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Nom": "DJ Salgueirinho",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Nom": "Rubel",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "Chanteur.euse"
+          ]
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Nom": " BK",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "Rappeur.euse"
+          ]
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Nom": "Valesca Popozuda",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Nom": "Batutinha DJ",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 50,
+        "fields": {
+          "Nom": "DJ Biel do Furduncinho ",
+          "Quartier": 20,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Nom": "MC Mylla",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Nom": "MC TH",
+          "Quartier": 21,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 53,
+        "fields": {
+          "Nom": "MC Lucy",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 54,
+        "fields": {
+          "Nom": "DJ LD Sheik",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 55,
+        "fields": {
+          "Nom": "MC Rose da Treta",
+          "Quartier": 8,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 56,
+        "fields": {
+          "Nom": "MC Bala 7",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 57,
+        "fields": {
+          "Nom": "DJ 2K do Chapadão",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 58,
+        "fields": {
+          "Nom": " PL Torvic",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 59,
+        "fields": {
+          "Nom": " DJ Fb de Niterói",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ"
+          ]
+        }
+      },
+      {
+        "id": 60,
+        "fields": {
+          "Nom": "MC Rogê",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 61,
+        "fields": {
+          "Nom": "G Talibã",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ"
+          ]
+        }
+      },
+      {
+        "id": 62,
+        "fields": {
+          "Nom": "DJ Meek",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ"
+          ]
+        }
+      },
+      {
+        "id": 63,
+        "fields": {
+          "Nom": "DJ Boladinho",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ"
+          ]
+        }
+      },
+      {
+        "id": 64,
+        "fields": {
+          "Nom": "Ávila",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 65,
+        "fields": {
+          "Nom": "Biggie Diehl",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 66,
+        "fields": {
+          "Nom": " MC Beatriz",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 67,
+        "fields": {
+          "Nom": "DJ Laranjinha",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ"
+          ]
+        }
+      },
+      {
+        "id": 68,
+        "fields": {
+          "Nom": "MC Oliveira",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 69,
+        "fields": {
+          "Nom": "DJ Yure 22",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 70,
+        "fields": {
+          "Nom": "MC Grigo 22",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 71,
+        "fields": {
+          "Nom": " MC Smith",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 72,
+        "fields": {
+          "Nom": "MC Robacena",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 73,
+        "fields": {
+          "Nom": "DJ Markinho do Jaca",
+          "Quartier": 21,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 74,
+        "fields": {
+          "Nom": "DJ Wenzel Crz",
+          "Quartier": 23,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 76,
+        "fields": {
+          "Nom": "DJ RAMOM",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ"
+          ]
+        }
+      },
+      {
+        "id": 77,
+        "fields": {
+          "Nom": "MC Flavinho",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 78,
+        "fields": {
+          "Nom": "DJ Maluquinho",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ"
+          ]
+        }
+      },
+      {
+        "id": 79,
+        "fields": {
+          "Nom": "LB Único",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 80,
+        "fields": {
+          "Nom": "MC GW",
+          "Quartier": 22,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 81,
+        "fields": {
+          "Nom": "DJ LK da Escócia",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ"
+          ]
+        }
+      },
+      {
+        "id": 82,
+        "fields": {
+          "Nom": "DJ Perrin",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ"
+          ]
+        }
+      },
+      {
+        "id": 83,
+        "fields": {
+          "Nom": "DJ Breno",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ"
+          ]
+        }
+      },
+      {
+        "id": 84,
+        "fields": {
+          "Nom": "DJ Terrorista",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ"
+          ]
+        }
+      },
+      {
+        "id": 85,
+        "fields": {
+          "Nom": "BR da Tijuca",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 86,
+        "fields": {
+          "Nom": "MC PQD",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 87,
+        "fields": {
+          "Nom": "DJ BN Sheik",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ"
+          ]
+        }
+      },
+      {
+        "id": 88,
+        "fields": {
+          "Nom": "DJ JONES MSL",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ"
+          ]
+        }
+      },
+      {
+        "id": 89,
+        "fields": {
+          "Nom": "MC Breno",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 90,
+        "fields": {
+          "Nom": "MC Charlin",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 91,
+        "fields": {
+          "Nom": " MC WL",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 92,
+        "fields": {
+          "Nom": "MC Jhey",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 93,
+        "fields": {
+          "Nom": "Leo da Zona Sul",
+          "Quartier": 0,
+          "Type": null
+        }
+      },
+      {
+        "id": 94,
+        "fields": {
+          "Nom": "DJ Jonathan da Provi",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice"
+          ]
+        }
+      },
+      {
+        "id": 95,
+        "fields": {
+          "Nom": "MC FG",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 96,
+        "fields": {
+          "Nom": "MC PL Alves",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 97,
+        "fields": {
+          "Nom": "MC Robozão",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 98,
+        "fields": {
+          "Nom": " MC VUKVUK",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 99,
+        "fields": {
+          "Nom": "DJ Sorriso 22",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ"
+          ]
+        }
+      },
+      {
+        "id": 100,
+        "fields": {
+          "Nom": "MC Monik do PIX",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 101,
+        "fields": {
+          "Nom": "MC Negritin",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "MC"
+          ]
+        }
+      },
+      {
+        "id": 102,
+        "fields": {
+          "Nom": "Trilogia do Santo Amaro",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ",
+            "Producteur.ice",
+            "Groupe"
+          ]
+        }
+      },
+      {
+        "id": 103,
+        "fields": {
+          "Nom": "DJ Batata",
+          "Quartier": 0,
+          "Type": [
+            "L",
+            "DJ"
+          ]
+        }
+      },
+      {
+        "id": 104,
+        "fields": {
+          "Nom": "Sodré",
+          "Quartier": 0,
+          "Type": null
+        }
+      }
+    ],
+    "id": "Musiciens",
+    "metadata": {
+      "tableRef": 4,
+      "primaryViewId": 4,
+      "summarySourceTable": 0,
+      "onDemand": false,
+      "rawViewSectionRef": 11,
+      "recordCardViewSectionRef": 12
+    }
+  },
+  "Batidas": {
+    "columns": {
+      "Nom": {
+        "id": "Nom",
+        "fields": {
+          "colRef": 19,
+          "label": "Nom",
+          "isFormula": false,
+          "parentId": 5,
+          "parentPos": 19,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "BPM": {
+        "id": "BPM",
+        "fields": {
+          "colRef": 20,
+          "label": "BPM",
+          "isFormula": false,
+          "parentId": 5,
+          "parentPos": 20,
+          "type": "Int",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Effectif": {
+        "id": "Effectif",
+        "fields": {
+          "colRef": 21,
+          "label": "Effectif",
+          "isFormula": true,
+          "parentId": 5,
+          "parentPos": 21,
+          "type": "Any",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Exemple_Audio": {
+        "id": "Exemple_Audio",
+        "fields": {
+          "colRef": 26,
+          "label": "Exemple Audio",
+          "isFormula": false,
+          "parentId": 5,
+          "parentPos": 26,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Annee_d_apparition": {
+        "id": "Annee_d_apparition",
+        "fields": {
+          "colRef": 39,
+          "label": "Année d'apparition",
+          "isFormula": false,
+          "parentId": 5,
+          "parentPos": 39,
+          "type": "Int",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Createur_Popularisateur": {
+        "id": "Createur_Popularisateur",
+        "fields": {
+          "colRef": 40,
+          "label": "Créateur / Popularisateur",
+          "isFormula": false,
+          "parentId": 5,
+          "parentPos": 40,
+          "type": "Ref:Musiciens",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 41,
+          "visibleCol": 14,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Ville_d_origine": {
+        "id": "Ville_d_origine",
+        "fields": {
+          "colRef": 57,
+          "label": "Ville d'origine",
+          "isFormula": false,
+          "parentId": 5,
+          "parentPos": 57,
+          "type": "ChoiceList",
+          "widgetOptions": "{\"widget\":\"TextBox\",\"choices\":[\"Miami\",\"Rio de Janeiro\",\"São Paulo\",\"Vitória\",\"Belo Horizonte\",\"Salvador da Bahia\",\"Recife\"],\"alignment\":\"left\",\"choiceOptions\":{}}",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Description": {
+        "id": "Description",
+        "fields": {
+          "colRef": 58,
+          "label": "Description",
+          "isFormula": false,
+          "parentId": 5,
+          "parentPos": 58,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      }
+    },
+    "data": [
+      {
+        "id": 1,
+        "fields": {
+          "Nom": "Voltmix",
+          "BPM": 120,
+          "Exemple_Audio": "https://www.youtube.com/watch?v=whw1PxFkaos",
+          "Annee_d_apparition": 1988,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": [
+            "L",
+            "Miami"
+          ],
+          "Description": "Vient du Miami Bass",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Nom": "Tamborzão",
+          "BPM": 120,
+          "Exemple_Audio": "",
+          "Annee_d_apparition": 1997,
+          "Createur_Popularisateur": 6,
+          "Ville_d_origine": [
+            "L",
+            "Rio de Janeiro"
+          ],
+          "Description": "Première batida brésilienne utilisée",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Nom": "Beat Bolha",
+          "BPM": 150,
+          "Exemple_Audio": "",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": [
+            "L",
+            "Rio de Janeiro"
+          ],
+          "Description": "Utilise des sons qui rappellent des bulles",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Nom": "Tambor Xereca",
+          "BPM": 150,
+          "Exemple_Audio": "https://www.youtube.com/watch?v=dMg74ZvGBNE",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": [
+            "L",
+            "Rio de Janeiro"
+          ],
+          "Description": "",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Nom": "Beat Latão",
+          "BPM": 150,
+          "Exemple_Audio": "",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": [
+            "L",
+            "Rio de Janeiro"
+          ],
+          "Description": "Utilise des sons métalliques",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Nom": "Afrofunk",
+          "BPM": 0,
+          "Exemple_Audio": "",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": [
+            "L",
+            "Rio de Janeiro"
+          ],
+          "Description": "",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Nom": "Non identifiée / Unique à la chanson ",
+          "BPM": 0,
+          "Exemple_Audio": "",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": null,
+          "Description": "",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Nom": "Mandelão",
+          "BPM": 0,
+          "Exemple_Audio": "https://www.youtube.com/watch?v=uwyMGddFGdU",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": [
+            "L",
+            "São Paulo"
+          ],
+          "Description": "",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Nom": "Beat Fino",
+          "BPM": 150,
+          "Exemple_Audio": "",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": [
+            "L",
+            "Vitória"
+          ],
+          "Description": "Version pitchée vers le haut du beatbox",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Nom": "Beatbox",
+          "BPM": 0,
+          "Exemple_Audio": "",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 37,
+          "Ville_d_origine": null,
+          "Description": "",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Nom": "Beat Modinha",
+          "BPM": 130,
+          "Exemple_Audio": "https://www.youtube.com/watch?v=PWxwhmYeCW0",
+          "Annee_d_apparition": 2025,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": null,
+          "Description": "",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Nom": "Pagodão Baiano",
+          "BPM": 0,
+          "Exemple_Audio": "",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": [
+            "L",
+            "Salvador da Bahia"
+          ],
+          "Description": "",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Nom": "Arrocha",
+          "BPM": 0,
+          "Exemple_Audio": "",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": null,
+          "Description": "",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Nom": "Brega Funk",
+          "BPM": 0,
+          "Exemple_Audio": "",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": [
+            "L",
+            "Recife"
+          ],
+          "Description": "",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Nom": "Afro Latão",
+          "BPM": 0,
+          "Exemple_Audio": "https://www.youtube.com/watch?v=nK2q5YyvSDg",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": [
+            "L",
+            "Rio de Janeiro"
+          ],
+          "Description": "Mélange du beat latão et de l'afrofunk",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Nom": "Congo de Ouro",
+          "BPM": 0,
+          "Exemple_Audio": "",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": null,
+          "Description": "Sequence rythmique traditionnelle afro-brésilienne",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Nom": "Piseiro",
+          "BPM": 0,
+          "Exemple_Audio": "https://www.youtube.com/watch?v=QVUsRu6UpfQ",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": null,
+          "Description": "",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Nom": "[Beatbox 1]",
+          "BPM": 130,
+          "Exemple_Audio": "https://gitlab.com/noeblinbiao/batidas/-/blob/f0b2d055e22e139386112064bf502886fdcbc455/Batida_10__130_BPM_.wav",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": [
+            "L",
+            "Rio de Janeiro"
+          ],
+          "Description": "",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Nom": "Atabaque",
+          "BPM": 0,
+          "Exemple_Audio": "",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": null,
+          "Description": "",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Nom": "Beat Street Fighter",
+          "BPM": 130,
+          "Exemple_Audio": "https://soundcloud.com/trendtiktokbr/beat-street-fighter-dj-ramom-130-bpm?in=trendtiktokbr/sets/pack-de-beat-e-vozes",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 76,
+          "Ville_d_origine": null,
+          "Description": "",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Nom": "[Variation Afro funk MC Flavinho]",
+          "BPM": 140,
+          "Exemple_Audio": "",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": null,
+          "Description": "",
+          "Effectif": null
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Nom": "[Beatbox Catra]",
+          "BPM": 0,
+          "Exemple_Audio": "",
+          "Annee_d_apparition": 0,
+          "Createur_Popularisateur": 0,
+          "Ville_d_origine": null,
+          "Description": "",
+          "Effectif": null
+        }
+      }
+    ],
+    "id": "Batidas",
+    "metadata": {
+      "tableRef": 5,
+      "primaryViewId": 5,
+      "summarySourceTable": 0,
+      "onDemand": false,
+      "rawViewSectionRef": 14,
+      "recordCardViewSectionRef": 15
+    }
+  },
+  "Categories_de_funk": {
+    "columns": {
+      "Nom": {
+        "id": "Nom",
+        "fields": {
+          "colRef": 49,
+          "label": "Nom",
+          "isFormula": false,
+          "parentId": 7,
+          "parentPos": 49,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Description": {
+        "id": "Description",
+        "fields": {
+          "colRef": 50,
+          "label": "Description",
+          "isFormula": true,
+          "parentId": 7,
+          "parentPos": 50,
+          "type": "Any",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      }
+    },
+    "data": [
+      {
+        "id": 1,
+        "fields": {
+          "Nom": "Pop",
+          "Description": null
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Nom": "Proibidão",
+          "Description": null
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Nom": "Consciente",
+          "Description": null
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Nom": "Ostentação",
+          "Description": null
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Nom": "Brega Funk",
+          "Description": null
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Nom": "Trapfunk",
+          "Description": null
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Nom": "Afrofunk",
+          "Description": null
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Nom": "Baile",
+          "Description": null
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Nom": "Santo Amaro",
+          "Description": null
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Nom": "Aquecimento",
+          "Description": null
+        }
+      }
+    ],
+    "id": "Categories_de_funk",
+    "metadata": {
+      "tableRef": 7,
+      "primaryViewId": 7,
+      "summarySourceTable": 0,
+      "onDemand": false,
+      "rawViewSectionRef": 20,
+      "recordCardViewSectionRef": 21
+    }
+  },
+  "Samples": {
+    "columns": {
+      "Nom": {
+        "id": "Nom",
+        "fields": {
+          "colRef": 23,
+          "label": "Nom",
+          "isFormula": false,
+          "parentId": 6,
+          "parentPos": 23,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Chanson_d_origine": {
+        "id": "Chanson_d_origine",
+        "fields": {
+          "colRef": 24,
+          "label": "Chanson d'origine",
+          "isFormula": false,
+          "parentId": 6,
+          "parentPos": 24,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Artiste": {
+        "id": "Artiste",
+        "fields": {
+          "colRef": 25,
+          "label": "Artiste",
+          "isFormula": false,
+          "parentId": 6,
+          "parentPos": 25,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Annee": {
+        "id": "Annee",
+        "fields": {
+          "colRef": 53,
+          "label": "Année",
+          "isFormula": false,
+          "parentId": 6,
+          "parentPos": 53,
+          "type": "Int",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "URL": {
+        "id": "URL",
+        "fields": {
+          "colRef": 66,
+          "label": "URL",
+          "isFormula": false,
+          "parentId": 6,
+          "parentPos": 66,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      },
+      "Film_d_origine": {
+        "id": "Film_d_origine",
+        "fields": {
+          "colRef": 67,
+          "label": "Film d'origine",
+          "isFormula": false,
+          "parentId": 6,
+          "parentPos": 47.5,
+          "type": "Text",
+          "widgetOptions": "",
+          "formula": "",
+          "description": "",
+          "untieColIdFromLabel": false,
+          "summarySourceCol": 0,
+          "displayCol": 0,
+          "visibleCol": 0,
+          "rules": null,
+          "reverseCol": 0,
+          "recalcWhen": 0,
+          "recalcDeps": null
+        }
+      }
+    },
+    "data": [
+      {
+        "id": 1,
+        "fields": {
+          "Nom": "Street Fighter",
+          "Chanson_d_origine": "",
+          "Artiste": "",
+          "Film_d_origine": "",
+          "Annee": 0,
+          "URL": ""
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Nom": "Ressort",
+          "Chanson_d_origine": "",
+          "Artiste": "",
+          "Film_d_origine": "",
+          "Annee": 0,
+          "URL": ""
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Nom": "[Violons orientaux] ",
+          "Chanson_d_origine": "",
+          "Artiste": "",
+          "Film_d_origine": "",
+          "Annee": 0,
+          "URL": ""
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Nom": "\"GO\" de 50 Cent",
+          "Chanson_d_origine": "In Da Club",
+          "Artiste": "50 Cent",
+          "Film_d_origine": "",
+          "Annee": 2009,
+          "URL": "https://www.youtube.com/watch?v=5qm8PH4xAss"
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Nom": "Sifflements Kill Bill",
+          "Chanson_d_origine": "",
+          "Artiste": "Quentin Tarantino",
+          "Film_d_origine": "Kill Bill 2",
+          "Annee": 0,
+          "URL": "https://www.youtube.com/watch?v=3CamXKi002Q"
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Nom": "O Cheiro da Carolina",
+          "Chanson_d_origine": "O Cheiro da Carolina",
+          "Artiste": "Luiz Gonzaga",
+          "Film_d_origine": "",
+          "Annee": 1956,
+          "URL": "https://www.youtube.com/watch?v=_FX7FNjCU9A"
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Nom": "Love Nwantiti",
+          "Chanson_d_origine": "Love Nwantiti",
+          "Artiste": " Ckay",
+          "Film_d_origine": "",
+          "Annee": 2019,
+          "URL": "https://www.youtube.com/watch?v=D-YDEyuDxWU"
+        }
+      }
+    ],
+    "id": "Samples",
+    "metadata": {
+      "tableRef": 6,
+      "primaryViewId": 6,
+      "summarySourceTable": 0,
+      "onDemand": false,
+      "rawViewSectionRef": 17,
+      "recordCardViewSectionRef": 18
+    }
+  }
+}

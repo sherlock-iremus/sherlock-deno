@@ -36,9 +36,9 @@ export class Creator {
         return value instanceof Creator;
     }
 
-    static isCreatorArray(value: unknown): value is Creator[] {
-        return Array.isArray(value) && value.every(Creator.isCreator);
-    }
+    // static isCreatorArray(value: unknown): value is Creator[] {
+    //     return Array.isArray(value) && value.every(Creator.isCreator);
+    // }
 }
 
 class MetadataType {
@@ -67,11 +67,6 @@ export class MetadataValue {
             x.value = this.value.asDict();
             delete x.typeUri;
         }
-        else if (Creator.isCreatorArray(this.value)) {
-            x.value = this.value.map(v => v.asDict());
-            delete x.typeUri;
-        }
-
         if (this.lang && this.metadataType.lang) {
             x.lang = this.lang.toString();
         }
