@@ -22,7 +22,7 @@ export async function fetchRecords(base: string, apiKey: string, docId: string, 
 
 export async function writeValueById(gristBaseUri: string, gristApiKey: string, gristDocId: string, gristTable: string, id: string, column: string, value: string) {
     const response = await fetch(
-        `${gristBaseUri}/api/docs/${gristDocId}/tables/${gristTable}/records`,
+        `${gristBaseUri}/docs/${gristDocId}/tables/${gristTable}/records`,
         {
             method: "PATCH",
             headers: {
@@ -43,7 +43,7 @@ export async function writeValueById(gristBaseUri: string, gristApiKey: string, 
     );
 
     if (!response.ok) {
-        throw new Error(`Error: ${response.status} ${response.statusText}`);
+        throw new Error(`Error: ${response.status} ${response.statusText}, ${await response.text()}`);
     }
 
     const data = await response.json();
