@@ -26,7 +26,7 @@ while (url) {
 }
 
 for (const opera of operas) {
-    console.log(opera.id);
+    console.log(opera);
     const fileUrl = opera.files.find((f: { name: string, url: string }) => f.name === "mei.xml").url;
     const response = await fetch(fileUrl);
     const data = new Uint8Array(await response.arrayBuffer());
