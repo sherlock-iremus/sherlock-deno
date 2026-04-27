@@ -1,5 +1,4 @@
 import { Command } from 'jsr:@cliffy/command@1.0.0';
-import { load } from 'https://deno.land/std@0.224.0/dotenv/mod.ts';
 import { fetchRecords as fetchGristRecords, patchRecord, } from "./common-grist.ts";
 import { indexFilesByName, findFilesByPrefix } from "./common-files.ts";
 import { postDataUploads, postDatas, putMetadatas } from './common-nakala.ts';

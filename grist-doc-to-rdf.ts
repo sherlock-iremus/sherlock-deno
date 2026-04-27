@@ -2,6 +2,8 @@ import { Command } from 'jsr:@cliffy/command@1.0.0';
 import { fetchRecords, getColumns, getTables } from "./common-grist.ts";
 import { GristTable, GristRecord } from "./common-grist-data.ts";
 import { DataFactory, Store, Writer } from "https://esm.sh/n3";
+import { writeTtl } from "./common-n3.ts";
+const { namedNode, literal, quad } = DataFactory;
 
 const { options } = await new Command()
     .name('SHERLOCK Grist Opentheso Plugin skos:prefLabel to Opentheso URI')
@@ -15,6 +17,19 @@ const { options } = await new Command()
     .option('--rdf-ressource-base <rdf-ressource-base:string>')
     .option('--output-ttl <output-ttl:string>')
     .parse();
+
+// SETUP RDF
+
+const E = options.rdfRessourceBase;
+const R = options.rdfPropertiesPrefix;
+const writer = new Writer({
+    prefixes: {
+        "": E,
+        p: R
+    }
+});
+
+// SETUP GRIST DATA STRUCTURE
 
 const GRIST_DATA: Record<string, GristTable> = {};
 for (const tableId of options.table) GRIST_DATA[tableId] = { columns: {}, data: {}, id: tableId, metadata: {} };
@@ -36,19 +51,18 @@ for (const tableData of tables["tables"]) {
 
 // CREATE RDF
 
-const { namedNode, literal, quad } = DataFactory;
-const E = options.rdfRessourceBase;
-const R = options.rdfPropertiesPrefix;
-const writer = new Writer({
-    escapeUnicode: false,
-    prefixes: {
-        e: E,
-        p: R
+for (const [tableId, tableData] of Object.entries(GRIST_DATA)) {
+    for (const record of Object.values(tableData.data)) {
+        const recordNode = namedNode(E + record.id);
+        for (const [columnId, columnData] of Object.entries(tableData.columns)) {
+            const value = record[columnId];
+            if (value) {
+                writer.addQuad(recordNode, namedNode(R + columnId), literal(value));
+            }
+        }
     }
-});
-writer.addQuad(namedNode(E + 'andouillette'), namedNode(R + 'label'), literal("💾"));
-writer.end((error: any, result: any) => {
-    console.log(result);
-    if (error) console.error(error);
-    else Deno.writeTextFileSync(options.outputTtl, result);
-});
+}
+
+// THAT'S ALL, FOLKS
+
+writeTtl(writer, options.outputTtl);
