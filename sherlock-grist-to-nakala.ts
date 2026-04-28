@@ -50,7 +50,6 @@ for (const record of records) {
             const r = await postDataUploads(options.nakalaApiBase, options.nakalaApiKey, filePath);
             filesOnNakala.push(r);
             console.log("✨ /datas/uploads =>", JSON.stringify(r))
-            break
         }
 
         // POST DATA
