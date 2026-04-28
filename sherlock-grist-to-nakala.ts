@@ -64,24 +64,23 @@ for (const record of records) {
         console.log(`🌸 ${fullNewNakalaDoi}`);
 
         // STORE NAKALA DOI IN GRIST
-        // await patchRecord(
-        //     options.gristBase,
-        //     options.gristApiKey,
-        //     options.gristDocId,
-        //     options.gristTableId,
-        //     {
-        //         "records": [{
-        //             "require": { E42_business_id: businessId },
-        //             "fields": { "E42_nakala_doi": fullNewNakalaDoi }
-        //         }]
-        //     }
-        // )
+        await patchRecord(
+            options.gristBase,
+            options.gristApiKey,
+            options.gristDocId,
+            options.gristTableId,
+            {
+                "records": [{
+                    "require": { E42_business_id: businessId },
+                    "fields": { "E42_nakala_doi": fullNewNakalaDoi }
+                }]
+            }
+        )
     }
 
     // METADATAS
     const requiredMetadata = extractRequiredMetadataFromRecord(record.fields);
-    console.log(requiredMetadata.map(x => x.forRequest()));
-    const r_md = await putMetadatas(options.nakalaApiBase, options.nakalaApiKey, nakalaDoiOnly, requiredMetadata.map(x => x.forRequest()));
-    console.log(`ℹ️  /datas/${nakalaDoiOnly}`, r_md)
-    break
+    const md = requiredMetadata.map(x => x.forRequest())
+    const r_md = await putMetadatas(options.nakalaApiBase, options.nakalaApiKey, nakalaDoiOnly, md);
+    console.log(`ℹ️  /datas/${nakalaDoiOnly}`, r_md.url)
 }

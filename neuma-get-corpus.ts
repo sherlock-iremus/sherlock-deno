@@ -4,7 +4,6 @@ const NEUMA_BASE = 'https://neuma.huma-num.fr';
 
 async function fetchNeumaOpera(url: string) {
     const response = await fetch(url);
-
     return await response.json();
 }
 
@@ -27,8 +26,15 @@ while (url) {
 
 for (const opera of operas) {
     console.log(opera);
-    const fileUrl = opera.files.find((f: { name: string, url: string }) => f.name === "mei.xml").url;
-    const response = await fetch(fileUrl);
-    const data = new Uint8Array(await response.arrayBuffer());
-    await Deno.writeFile(options.out + '/' + opera.local_ref + '.mei', data);
+    await Deno.writeTextFile(options.out + '/' + opera.local_ref + '.json', JSON.stringify(opera, null, 4));
+
+    const fileUrl1 = opera.files.find((f: { name: string, url: string }) => f.name === "mei.xml").url;
+    const response1 = await fetch(fileUrl1);
+    const data1 = new Uint8Array(await response1.arrayBuffer());
+    await Deno.writeFile(options.out + '/' + opera.local_ref + '.mei', data1);
+
+    const fileurl2 = opera.files.find((f: { name: string, url: string }) => f.name === "score.xml").url;
+    const response2 = await fetch(fileurl2);
+    const data2 = new Uint8Array(await response2.arrayBuffer());
+    await Deno.writeFile(options.out + '/' + opera.local_ref + '.xml', data2);
 }

@@ -32,6 +32,14 @@ export class Creator {
         return x;
     }
 
+    isNotEmpty(): boolean {
+        function _(s: string): boolean {
+            return (typeof s === "string" && s.trim().length > 0);
+        }
+
+        return _(this.surname) || _(this.givenname);
+    }
+
     static isCreator(value: unknown): value is Creator {
         return value instanceof Creator;
     }
@@ -57,6 +65,7 @@ export class MetadataValue {
     ) { }
 
     forRequest() {
+        // console.log(this);
         let x: any = {
             "propertyUri": this.metadataType.propertyUri.href,
             "typeUri": this.metadataType.typeUri.href,
@@ -65,6 +74,8 @@ export class MetadataValue {
 
         if (Creator.isCreator(this.value)) {
             x.value = this.value.asDict();
+            if (!x.value.givenname) x.value.givenname = " ";
+            if (!x.value.surname) x.value.surname = " ";
             delete x.typeUri;
         }
         if (this.lang && this.metadataType.lang) {
