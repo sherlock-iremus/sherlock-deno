@@ -1,5 +1,6 @@
 export async function fetchRecords(base: string, apiKey: string, docId: string, tableId: string) {
     const url = `${base}/docs/${docId}/tables/${tableId}/records`;
+    console.log('🌐', url);
     try {
         const response = await fetch(url, {
             headers: {
