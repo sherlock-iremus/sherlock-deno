@@ -1,17 +1,5 @@
 const OPENTHESO_BASE_URL = 'http://opentheso.huma-num.fr';
 
-/**
- * Transforme un @id de concept en URL canonique Opentheso.
- * Prend la dernière partie du chemin après le dernier '/' et préfixe avec l'URL de base Opentheso.
- * @param conceptId L'@id du concept (URL complète)
- * @returns L'URL canonique Opentheso du concept
- */
-export function toOpenthesoCanonicalUrl(conceptURI: string): string {
-	// Récupère la partie après le dernier '/'
-	const lastPart = conceptURI.substring(conceptURI.lastIndexOf('/') + 1);
-	return OPENTHESO_BASE_URL + '/' + lastPart;
-}
-
 // Type pour un label multilingue (ex: prefLabel)
 export interface SkosLabel {
 	"@language"?: string;

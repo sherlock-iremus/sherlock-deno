@@ -1,7 +1,7 @@
 import { Command } from 'jsr:@cliffy/command@1.0.0';
 
 import { fetchRecords as fetchGristRecords, writeValueById } from "./common-grist.ts";
-import { fetchThesaurus, getConceptFrenchPrefLabels, SKOS_CONCEPT_TYPE, toOpenthesoCanonicalUrl } from './common-opentheso.ts';
+import { fetchThesaurus, getConceptFrenchPrefLabels, SKOS_CONCEPT_TYPE } from './common-opentheso.ts';
 
 const { options } = await new Command()
     .name('SHERLOCK Grist Opentheso Plugin skos:prefLabel to Opentheso URI')
@@ -47,7 +47,7 @@ for (let i = 0; i < records.length; i++) {
         if (prefLabel.trim() === "") continue; // Ignore les labels vides
         const matchingConcept = conceptList.find(concept => getConceptFrenchPrefLabels(concept).includes(prefLabel));
         if (matchingConcept) {
-            matchingConcepts.push(toOpenthesoCanonicalUrl(matchingConcept['@id']));
+            matchingConcepts.push(matchingConcept['@id']);
         } else {
             console.log(`No match found for "${prefLabel}"`);
             matchingConcepts.push("no-uri-found:" + prefLabel);
