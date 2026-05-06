@@ -1,3 +1,29 @@
+interface AddRecordBody {
+    fields: {
+        [key: string]: string | number | boolean | null;
+    };
+}
+
+export async function addRecords(gristBaseUri: string, gristApiKey: string, gristDocId: string, gristTable: string, body: AddRecordBody[]) {
+    const response = await fetch(
+        `${gristBaseUri}/docs/${gristDocId}/tables/${gristTable}/records`,
+        {
+            method: "POST",
+            headers: {
+                "Authorization": `Bearer ${gristApiKey}`,
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(body),
+        }
+    );
+
+    if (!response.ok) {
+        throw new Error(`Error: ${response.status} ${response.statusText}`);
+    }
+
+    const data = await response.json();
+}
+
 export async function fetchRecords(base: string, apiKey: string, docId: string, tableId: string) {
     const url = `${base}/docs/${docId}/tables/${tableId}/records`;
     console.log('🌐', url);
